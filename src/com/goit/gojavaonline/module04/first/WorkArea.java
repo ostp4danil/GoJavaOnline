@@ -10,7 +10,7 @@ public abstract class WorkArea {
         Rectangle newRectangle = new Rectangle((short) 4, (short) 5);
         Triangle newTriangle = new Triangle((short) 3, (short) 4, (short) 5);
         System.out.println("Circle: " + newCircle.calculateArea());
-        System.out.println("Triangle: " + newTriangle.calc());
+        System.out.println("Triangle: " + newTriangle.calculateArea());
         System.out.println("Rectangle: " + newRectangle.calculateArea());
     }
 }

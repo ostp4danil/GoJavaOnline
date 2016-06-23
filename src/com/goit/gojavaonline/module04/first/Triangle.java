@@ -12,7 +12,7 @@ public class Triangle {
         c = newC;
     }
 
-    public float calc()
+    public float calculateArea()
     {
         int p=(a+b+c)/2;
         return (float) Math.sqrt(p*(p-a)+p*(p-b)+p*(p-c));

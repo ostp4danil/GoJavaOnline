@@ -12,7 +12,7 @@ public class Rectangle {
         b = newB;
     }
 
-    public int calc(){
+    public int calculateArea(){
 
         return a*b;
 

@@ -3,7 +3,7 @@ package com.goit.gojavaonline.module04.first;
 /**
  * Created by Danil-MAC on 22.06.16.
  */
-public abstract class Work {
+public abstract class WorkArea {
     public static void main(String[] args) {
 
         Circle newCircle = new Circle((short)5);

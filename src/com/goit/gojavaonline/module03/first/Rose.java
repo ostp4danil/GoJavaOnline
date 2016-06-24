@@ -7,10 +7,5 @@ public class Rose extends Flower {
 
     private int roses;
 
-    public int addRoses(){
-        return roses + RoseBush.getBushes();
-    }
-
-
 
 }

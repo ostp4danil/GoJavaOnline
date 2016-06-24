@@ -5,11 +5,7 @@ package com.goit.gojavaonline.module03.first;
  */
 public class RoseBush {
 
-    private static int bushes;
-
-    static public int getBushes(){
-        return bushes;
-    }
-
+    private int bushes;
+    private Rose[] rosa;
 
 }

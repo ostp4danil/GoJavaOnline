@@ -8,13 +8,6 @@ import java.util.Scanner;
 public abstract class Runner {
     public static void main(String[] args) {
 
-      /*  Circle newCircle = new Circle((short)5);
-        Rectangle newRectangle = new Rectangle((short) 4, (short) 5);
-        Triangle newTriangle = new Triangle((short) 3, (short) 4, (short) 5);
-        System.out.println("Circle: " + newCircle.calculateArea());
-        System.out.println("Triangle: " + newTriangle.calculateArea());
-        System.out.println("Rectangle: " + newRectangle.calculateArea());
-        */
         Area[] figures = new Area [5];
         Scanner scanner = new Scanner(System.in);
         for (int i=0; i<5; i++){

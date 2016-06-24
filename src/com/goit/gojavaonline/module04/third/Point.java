@@ -4,19 +4,19 @@ package com.goit.gojavaonline.module04.third;
  * Created by Danil-MAC on 23.06.16.
  */
 public class Point {
-    private double x;
-    private double y;
+    private int x;
+    private int y;
 
-    Point(int x, int y) {
+    public Point(int x, int y) {
         this.x = x;
         this.y = y;
     }
 
-    public double getX() {
+    public int getX() {
         return x;
     }
 
-    public double getY() {
+    public int getY() {
         return y;
     }
 }

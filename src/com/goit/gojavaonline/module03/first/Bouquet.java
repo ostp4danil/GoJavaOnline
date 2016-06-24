@@ -2,10 +2,7 @@ package com.goit.gojavaonline.module03.first;
 
 public class Bouquet {
 
-    {
-        Flower first = new Rose();
-        RoseBush second = new RoseBush();
-    }
-
+    private Flower first = new Rose();
+    private RoseBush second = new RoseBush();
 
 }

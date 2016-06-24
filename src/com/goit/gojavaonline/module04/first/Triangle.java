@@ -1,6 +1,6 @@
 package com.goit.gojavaonline.module04.first;
 
-public class Triangle {
+public class Triangle implements Area{
     private double a;
     private double b;
     private double c;
@@ -12,6 +12,7 @@ public class Triangle {
         this.c = c;
     }
 
+    @Override
     public double calculateArea()
     {
         double p=(a+b+c)/2;

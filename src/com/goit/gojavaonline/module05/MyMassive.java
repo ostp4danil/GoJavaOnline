@@ -13,10 +13,7 @@ public class MyMassive {
         int[] myMass = new int[MASS_SIZE];
         for (int i = 0; i<MASS_SIZE; i++){
             myMass[i]= (int) Math.random();
-            switch (myMass[i]<myMass[i+1])
-            {
 
-            }
             System.out.printf(myMass[i] + " ");
         }
 

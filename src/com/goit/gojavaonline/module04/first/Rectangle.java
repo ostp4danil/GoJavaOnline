@@ -3,7 +3,7 @@ package com.goit.gojavaonline.module04.first;
 /**
  * Created by Danil-MAC on 22.06.16.
  */
-public class Rectangle {
+public class Rectangle implements Area{
     private double a;
     private double b;
 
@@ -12,6 +12,7 @@ public class Rectangle {
         this.b = b;
     }
 
+    @Override
     public double calculateArea(){
 
         return a*b;

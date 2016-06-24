@@ -15,6 +15,7 @@ public abstract class Runner {
             System.out.println("What figure you want to add?");
             String choice = scanner.next();
             switch (choice) {
+
                 case "Triangle":
                     figures[i] = new Triangle(4.5, 2.5, 4.0);
                     break;

@@ -5,11 +5,11 @@ package com.goit.gojavaonline.module04.second;
  */
 class TempConvertion {
 
-    public static float convertToC(float t){
+    public static float convertToCelsius(float t){
         return  (float) ((t-32)/1.8);
     }
 
-    public static float convertToF(float t){
+    public static float convertToFahrenheit(float t){
         return  (float) ((t*1.8)+32);
     }
 

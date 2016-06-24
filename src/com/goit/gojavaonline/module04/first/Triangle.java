@@ -1,21 +1,21 @@
 package com.goit.gojavaonline.module04.first;
 
 public class Triangle {
-    private short a;
-    private short b;
-    private short c;
+    private double a;
+    private double b;
+    private double c;
 
 
-    Triangle(short newA, short newB, short newC) {
-        a = newA;
-        b = newB;
-        c = newC;
+    Triangle(double a, double b, double c) {
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
-    public float calculateArea()
+    public double calculateArea()
     {
-        int p=(a+b+c)/2;
-        return (float) Math.sqrt(p*(p-a)+p*(p-b)+p*(p-c));
+        double p=(a+b+c)/2;
+        return  Math.sqrt(p*(p-a)+p*(p-b)+p*(p-c));
     }
 
 }

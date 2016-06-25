@@ -2,22 +2,27 @@ package com.goit.gojavaonline.module05.second;
 
 import com.goit.gojavaonline.module05.first.RandomArray;
 
+import java.util.Arrays;
+
 /**
  * Created by Danil-MAC on 24.06.16.
  */
 public class Runner {
     public static void main(String[] args) {
 
-        final int SIZE = 50;
+        final int SIZE = 20;
 
-        RandomArray myArray = new RandomArray(SIZE);
-        myArray.showArray();
+        int[] myArray = new int[SIZE];
+        myArray = RandomArray.randomize(myArray);
+
+        System.out.println(Arrays.toString(myArray));
         System.out.println();
-        int[] sortedMass = QSort.startSort(myArray.getMyArray());
-        for (int i=0; i<sortedMass.length; i++)
-            System.out.printf(sortedMass[i] + " ");
-        System.out.println("\nCheckout:");
-        myArray.showArray();
+
+        int[] sortedMass = QSort.startSort(myArray);
+        System.out.println(Arrays.toString(sortedMass));
+
+        System.out.println("\nChecking native array stay be unsorted:");
+        System.out.println(Arrays.toString(myArray));
 
     }
 }

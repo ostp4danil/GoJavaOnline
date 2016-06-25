@@ -7,10 +7,9 @@ import java.util.Random;
  */
 public class RandomArray {
 
-    private static Random rand = new Random();
-
 
     public static int[] randomize(int[] array) {
+        Random rand = new Random();
         array = new int[array.length];
         for (int i = 0; i < array.length; i++) {
             array[i] = rand.nextInt(200);

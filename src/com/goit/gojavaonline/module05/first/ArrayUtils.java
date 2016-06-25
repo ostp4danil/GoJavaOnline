@@ -5,11 +5,9 @@ package com.goit.gojavaonline.module05.first;
  */
 public class ArrayUtils {
 
-    private static int max = 0;
-    private static int min = 0;
-
     public static int searchMax(int[] array) {
 
+        int max = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] > max) {
                 max = array[i];
@@ -20,6 +18,7 @@ public class ArrayUtils {
 
     public static int searchMin(int[] array) {
 
+        int min = 0;
         for (int i = 0; i < array.length; i++) {
             if (array[i] < min) {
                 min = array[i];

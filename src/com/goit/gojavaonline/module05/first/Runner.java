@@ -1,7 +1,6 @@
 package com.goit.gojavaonline.module05.first;
 
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Runner {
     public static void main(String[] args) {
@@ -12,8 +11,8 @@ public class Runner {
 
         System.out.println(Arrays.toString(lottoBalls));
 
-        System.out.println("Maximum lotto number: " + FinderInMass.searchMax(lottoBalls));
+        System.out.println("Maximum lotto number: " + ArrayUtils.searchMax(lottoBalls));
 
-        System.out.println("Minimum lotto number: " + FinderInMass.searchMin(lottoBalls));
+        System.out.println("Minimum lotto number: " + ArrayUtils.searchMin(lottoBalls));
     }
 }

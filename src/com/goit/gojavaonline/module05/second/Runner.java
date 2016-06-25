@@ -21,7 +21,7 @@ public class Runner {
         int[] sortedMass = QSort.startSort(myArray);
         System.out.println(Arrays.toString(sortedMass));
 
-        System.out.println("\nChecking native array stay be unsorted:");
+        System.out.println("\nChecking native array stay being unsorted:");
         System.out.println(Arrays.toString(myArray));
 
     }

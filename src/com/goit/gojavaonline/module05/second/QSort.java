@@ -5,20 +5,19 @@ package com.goit.gojavaonline.module05.second;
  */
 public abstract class QSort {
 
-    private static int[] returnableArray;
-    private static int firstElement;
-    private static int lastElememt;
 
     public static int[] startSort(int[] takenArray) {
-        returnableArray = new int[takenArray.length];
+        int[] returnableArray = new int[takenArray.length];
+        int firstElement;
+        int lastElememt;
         returnableArray = takenArray.clone();
         firstElement = 0;
         lastElememt = returnableArray.length;
-        quickSearchBody(firstElement, lastElememt - 1);
+        quickSearchBody(returnableArray, firstElement, lastElememt - 1);
         return returnableArray;
     }
 
-    private static void quickSearchBody(int start, int end) {
+    private static void quickSearchBody(int[] workingArray, int start, int end) {
         if (start >= end) {
             return;
         }
@@ -26,24 +25,24 @@ public abstract class QSort {
         int j = end;
         int currentPosition = i - (i - j) / 2;
         while (i < j) {
-            while (i < currentPosition && (returnableArray[i] <= returnableArray[currentPosition])) {
+            while (i < currentPosition && (workingArray[i] <= workingArray[currentPosition])) {
                 i++;
             }
-            while (j > currentPosition && (returnableArray[currentPosition] <= returnableArray[j])) {
+            while (j > currentPosition && (workingArray[currentPosition] <= workingArray[j])) {
                 j--;
             }
             if (i < j) {
-                int temp = returnableArray[i];
-                returnableArray[i] = returnableArray[j];
-                returnableArray[j] = temp;
+                int temp = workingArray[i];
+                workingArray[i] = workingArray[j];
+                workingArray[j] = temp;
                 if (i == currentPosition) {
                     currentPosition = j;
                 } else if (j == currentPosition)
                     currentPosition = i;
             }
         }
-        QSort.quickSearchBody(start, currentPosition);
-        QSort.quickSearchBody(currentPosition + 1, end);
+        QSort.quickSearchBody(workingArray, start, currentPosition);
+        QSort.quickSearchBody(workingArray,currentPosition + 1, end);
     }
 
 

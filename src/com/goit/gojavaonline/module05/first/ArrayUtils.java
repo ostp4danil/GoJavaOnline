@@ -3,7 +3,7 @@ package com.goit.gojavaonline.module05.first;
 /**
  * Created by Danil-MAC on 25.06.16.
  */
-public class FinderInMass {
+public class ArrayUtils {
 
     private static int max = 0;
     private static int min = 0;

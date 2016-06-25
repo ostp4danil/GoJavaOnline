@@ -5,7 +5,6 @@ package com.goit.gojavaonline.module03.first;
  */
 public class RoseBush {
 
-    private int bushes;
-    private Rose[] rosa;
+    private Rose[] roses;
 
 }

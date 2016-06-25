@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * Created by Danil-MAC on 24.06.16.
  */
-public class RandomArray {
+public abstract class RandomArray {
 
 
     public static int[] randomize(int[] array) {

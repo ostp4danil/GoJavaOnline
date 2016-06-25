@@ -3,7 +3,7 @@ package com.goit.gojavaonline.module05.first;
 /**
  * Created by Danil-MAC on 25.06.16.
  */
-public class ArrayUtils {
+public abstract class ArrayUtils {
 
     public static int searchMax(int[] array) {
 

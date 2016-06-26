@@ -40,18 +40,17 @@ public abstract class ArrayUtils {
     }
 
 
-    public static int[] quickSort(int[] takenArray) {
-        int[] returnableArray = new int[takenArray.length];
-        int firstElement;
-        int lastElememt;
-        returnableArray = takenArray.clone();
-        firstElement = 0;
-        lastElememt = returnableArray.length;
-        quickSortBody(returnableArray, firstElement, lastElememt - 1);
-        return returnableArray;
+    public static int[] quickSort(int[] gotArray) {
+        int[] sortedArray = gotArray.clone();
+        int firstIndex;
+        int lastIndex;
+        firstIndex = 0;
+        lastIndex = sortedArray.length;
+        quickSortBody(sortedArray, firstIndex, lastIndex - 1);
+        return sortedArray;
     }
 
-    private static void quickSortBody(int[] workingArray, int start, int end) {
+    private static void quickSortBody(int[] array, int start, int end) {
         if (start >= end) {
             return;
         }
@@ -59,24 +58,24 @@ public abstract class ArrayUtils {
         int j = end;
         int currentPosition = i - (i - j) / 2;
         while (i < j) {
-            while (i < currentPosition && (workingArray[i] <= workingArray[currentPosition])) {
+            while (i < currentPosition && (array[i] <= array[currentPosition])) {
                 i++;
             }
-            while (j > currentPosition && (workingArray[currentPosition] <= workingArray[j])) {
+            while (j > currentPosition && (array[currentPosition] <= array[j])) {
                 j--;
             }
             if (i < j) {
-                int temp = workingArray[i];
-                workingArray[i] = workingArray[j];
-                workingArray[j] = temp;
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
                 if (i == currentPosition) {
                     currentPosition = j;
                 } else if (j == currentPosition)
                     currentPosition = i;
             }
         }
-        quickSortBody(workingArray, start, currentPosition);
-        quickSortBody(workingArray, currentPosition + 1, end);
+        quickSortBody(array, start, currentPosition);
+        quickSortBody(array, currentPosition + 1, end);
     }
 
 }

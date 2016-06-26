@@ -47,11 +47,11 @@ public abstract class ArrayUtils {
         returnableArray = takenArray.clone();
         firstElement = 0;
         lastElememt = returnableArray.length;
-        quickSearchBody(returnableArray, firstElement, lastElememt - 1);
+        quickSortBody(returnableArray, firstElement, lastElememt - 1);
         return returnableArray;
     }
 
-    private static void quickSearchBody(int[] workingArray, int start, int end) {
+    private static void quickSortBody(int[] workingArray, int start, int end) {
         if (start >= end) {
             return;
         }
@@ -75,8 +75,8 @@ public abstract class ArrayUtils {
                     currentPosition = i;
             }
         }
-        quickSearchBody(workingArray, start, currentPosition);
-        quickSearchBody(workingArray, currentPosition + 1, end);
+        quickSortBody(workingArray, start, currentPosition);
+        quickSortBody(workingArray, currentPosition + 1, end);
     }
 
 }

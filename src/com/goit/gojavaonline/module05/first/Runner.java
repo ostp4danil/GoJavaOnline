@@ -7,7 +7,7 @@ public class Runner {
 
         final int SIZE = 20;
         int[] lottoBalls = new int[SIZE];
-        lottoBalls = RandomArray.randomize(lottoBalls);
+        lottoBalls = ArrayUtils.randomize(lottoBalls);
 
         System.out.println(Arrays.toString(lottoBalls));
 

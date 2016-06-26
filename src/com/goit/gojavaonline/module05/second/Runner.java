@@ -1,6 +1,6 @@
 package com.goit.gojavaonline.module05.second;
 
-import com.goit.gojavaonline.module05.first.RandomArray;
+import com.goit.gojavaonline.module05.first.ArrayUtils;
 
 import java.util.Arrays;
 
@@ -13,12 +13,12 @@ public class Runner {
         final int SIZE = 20;
 
         int[] myArray = new int[SIZE];
-        myArray = RandomArray.randomize(myArray);
+        myArray = ArrayUtils.randomize(myArray);
 
         System.out.println(Arrays.toString(myArray));
         System.out.println();
 
-        int[] sortedMass = QSort.startSort(myArray);
+        int[] sortedMass = ArrayUtils.quickSort(myArray);
         System.out.println(Arrays.toString(sortedMass));
 
         System.out.println("\nChecking native array stay being unsorted:");

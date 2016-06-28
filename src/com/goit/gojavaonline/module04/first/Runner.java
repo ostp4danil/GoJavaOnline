@@ -2,10 +2,7 @@ package com.goit.gojavaonline.module04.first;
 
 import java.util.Scanner;
 
-/**
- * Created by Danil-MAC on 22.06.16.
- */
-public abstract class Runner {
+abstract class Runner {
 
     public static void main(String[] args) {
 

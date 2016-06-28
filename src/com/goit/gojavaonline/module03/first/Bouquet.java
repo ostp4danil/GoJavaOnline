@@ -1,6 +1,6 @@
 package com.goit.gojavaonline.module03.first;
 
-public class Bouquet {
+class Bouquet {
 
     private Flower[] myFlower;
 

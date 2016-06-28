@@ -1,6 +1,6 @@
-package com.goit.gojavaonline.module04.first;
+package com.goit.gojavaonline.module06.first.task0401;
 
-class Triangle implements Area{
+class Triangle implements Area {
     private double a;
     private double b;
     private double c;

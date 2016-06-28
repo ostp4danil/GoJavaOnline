@@ -1,4 +1,4 @@
-package com.goit.gojavaonline.module04.third;
+package com.goit.gojavaonline.module06.first.task0403;
 
 class PointDemo {
     public static void main(String[] args) {

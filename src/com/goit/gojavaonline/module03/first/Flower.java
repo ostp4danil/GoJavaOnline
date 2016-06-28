@@ -1,4 +1,4 @@
 package com.goit.gojavaonline.module03.first;
 
-public abstract class Flower {
+abstract class Flower {
 }

@@ -1,9 +1,9 @@
-package com.goit.gojavaonline.module04.first;
+package com.goit.gojavaonline.module06.first.task0401;
 
 /**
  * Created by Danil-MAC on 22.06.16.
  */
-class Rectangle implements Area{
+class Rectangle implements Area {
     private double a;
     private double b;
 

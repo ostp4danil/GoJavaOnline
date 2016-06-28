@@ -1,4 +1,4 @@
-package com.goit.gojavaonline.module04.second;
+package com.goit.gojavaonline.module06.first.task0402;
 
 /**
  * Created by Danil-MAC on 23.06.16.

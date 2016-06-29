@@ -29,7 +29,6 @@ abstract class Runner {
                 }
             } catch (WrongFigureException e) {
                 System.out.println("Error!: Entered name is: " + e.getFigureName() + "\nThere no figures find");
-                //break;
             }
 
         }

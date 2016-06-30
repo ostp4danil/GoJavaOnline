@@ -34,7 +34,6 @@ public class Order {
             stopper = scanner.next();
 
             tempOrder = MusicShop.prepareInstruments(order);
-            System.out.println("Temp order size: "+ tempOrder.size());
 
 
 

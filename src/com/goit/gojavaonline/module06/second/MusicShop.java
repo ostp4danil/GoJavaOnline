@@ -45,28 +45,37 @@ abstract class MusicShop {
 
     public static List<MusicInstrument> prepareInstruments(Map<String, Integer> order) {
 
-        for (int i=0; i<order.get("guitar"); i++){
+        int g = order.get("guitar");
+        int p = order.get("piano");
+        int t = order.get("trumpet");
+
+        for (int i=0; i<availableInstuments.size(); i++){
             if (availableInstuments.get(i).getName().equals("guitar")){
                 sentInstruments.add(availableInstuments.get(i));
                 MusicInstrument.setElementsValue(MusicInstrument.getElementsValue()-1);
                 availableInstuments.remove(i);
+                g--;
+                if (g==0) { break;}
             }
         }
 
-        for (int i=0; i<order.get("piano"); i++){
+        for (int i=0; i<availableInstuments.size(); i++){
             if (availableInstuments.get(i).getName().equals("piano")){
                 sentInstruments.add(availableInstuments.get(i));
                 MusicInstrument.setElementsValue(MusicInstrument.getElementsValue()-1);
                 availableInstuments.remove(i);
+                p--;
+                if (p==0) { break;}
             }
         }
 
-        for (int i=0; i<order.get("trumpet"); i++){
-            System.out.println(availableInstuments.get(i).getName());
+        for (int i=0; i<availableInstuments.size(); i++){
             if (availableInstuments.get(i).getName().equals("trumpet")){
                 sentInstruments.add(availableInstuments.get(i));
                 MusicInstrument.setElementsValue(MusicInstrument.getElementsValue()-1);
                 availableInstuments.remove(i);
+                t--;
+                if (t==0) {break;}
             }
         }
 

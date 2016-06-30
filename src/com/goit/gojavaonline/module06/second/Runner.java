@@ -7,11 +7,10 @@ public class Runner {
     public static void main(String[] args) {
 
         MusicShop.addInstuments();
-
-
-
-
-        MusicShop.showInstruments();
+        MusicShop.showAll();
+        Order.createOrder();
+        MusicShop.showOrder();
+        MusicShop.showAll();
 
     }
 }

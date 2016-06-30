@@ -1,7 +1,7 @@
 package com.goit.gojavaonline.module06.second;
 
 import java.util.ArrayList;
-import java.util.Map ;
+import java.util.Map;
 import java.util.List;
 import java.util.Scanner;
 
@@ -9,15 +9,12 @@ abstract class MusicShop {
 
 
     private static List<MusicInstrument> availableInstuments = new ArrayList<MusicInstrument>();
-    private static List<MusicInstrument> sentInstruments;
+    private static List<MusicInstrument> sentInstruments = new ArrayList<MusicInstrument>();
 
 
-    public static void showSent(List<MusicInstrument> ){
 
 
-    }
-
-    public static void addInstuments(){
+    public static void addInstuments() {
         System.out.println("!INSTUMENTS ADDNIG SYSTEM!");
         System.out.println("(to stop adding type \"stop\")\n");
         Scanner scanner = new Scanner(System.in);
@@ -26,13 +23,13 @@ abstract class MusicShop {
             System.out.println("Adding instrument name (available Piano, Trumpet, Guitar): ");
             String chooser = scanner.next();
             switch (chooser) {
-                case "Piano":
+                case "piano":
                     availableInstuments.add(new Piano(chooser));
                     break;
-                case "Trumpet":
+                case "trumpet":
                     availableInstuments.add(new Trumpet(chooser));
                     break;
-                case "Guitar":
+                case "guitar":
                     availableInstuments.add(new Guitar(chooser));
                     break;
                 case "stop":
@@ -46,24 +43,50 @@ abstract class MusicShop {
         }
     }
 
-    public static List<MusicInstrument> prepareInstruments(Map<String, Integer> order){
+    public static List<MusicInstrument> prepareInstruments(Map<String, Integer> order) {
 
-        if (order.get("guitar")<=()
-                && order.get("piano"<=MusicInstrument.getElementsValue())
-                && order.get("trumpet"))
-        for (int elementCode = 1; elementCode<4; elementCode++){
-            for(int i=0; i<MusicInstrument.getElementsValue(); i++){
-
+        for (int i=0; i<order.get("guitar"); i++){
+            if (availableInstuments.get(i).getName().equals("guitar")){
+                sentInstruments.add(availableInstuments.get(i));
+                MusicInstrument.setElementsValue(MusicInstrument.getElementsValue()-1);
+                availableInstuments.remove(i);
             }
         }
 
+        for (int i=0; i<order.get("piano"); i++){
+            if (availableInstuments.get(i).getName().equals("piano")){
+                sentInstruments.add(availableInstuments.get(i));
+                MusicInstrument.setElementsValue(MusicInstrument.getElementsValue()-1);
+                availableInstuments.remove(i);
+            }
+        }
 
+        for (int i=0; i<order.get("trumpet"); i++){
+            System.out.println(availableInstuments.get(i).getName());
+            if (availableInstuments.get(i).getName().equals("trumpet")){
+                sentInstruments.add(availableInstuments.get(i));
+                MusicInstrument.setElementsValue(MusicInstrument.getElementsValue()-1);
+                availableInstuments.remove(i);
+            }
+        }
+
+        return sentInstruments;
 
     }
 
-    public static void showInstruments(){
-        System.out.println(availableInstuments.toString());
+    public static void showAll(){
+        System.out.println("All instruments: ");
+        //int i=0;
+        for (int i=0; i<availableInstuments.size(); i++){
+            System.out.println(availableInstuments.get(i).getName());
+        }
+    }
 
+    public static void showOrder(){
+        System.out.println("Your order: ");
+        for (int i=0; i<sentInstruments.size(); i++){
+            System.out.println(sentInstruments.get(i).getName());
+        }
     }
 
 

@@ -19,4 +19,12 @@ abstract class MusicInstrument {
     public static int getElementsValue(){
         return elementsValue;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public static void setElementsValue(int elementsValue) {
+        MusicInstrument.elementsValue = elementsValue;
+    }
 }

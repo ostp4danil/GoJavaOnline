@@ -33,8 +33,7 @@ public class Order {
             System.out.println("Write \"stop\" to cancel.");
             stopper = scanner.next();
 
-            tempOrder = MusicShop.prepareInstruments(order);
-
+            tempOrder.add((MusicInstrument) MusicShop.prepareInstruments(order));
 
 
         }

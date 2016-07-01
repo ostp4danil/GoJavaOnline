@@ -8,11 +8,13 @@ public class Runner {
 
 
         MusicShop firstMusicShop = new MusicShop();
-        firstMusicShop.pushInstrument(new Piano("Piano"),25);
-        firstMusicShop.pushInstrument(new Trumpet("Trumpet"), 48);
-        firstMusicShop.pushInstrument(new Guitar("Guitar"), 50);
+        firstMusicShop.pushInstrument(new Piano("Piano"),5);
+        firstMusicShop.pushInstrument(new Trumpet("Trumpet"), 5);
+        firstMusicShop.pushInstrument(new Guitar("Guitar"), 5);
 
         Order currentOrder = new Order();
         currentOrder.createOrder(firstMusicShop);
+
+        firstMusicShop.showAll();
     }
 }

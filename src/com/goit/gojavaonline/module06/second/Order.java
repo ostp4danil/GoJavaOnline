@@ -18,23 +18,11 @@ public class Order {
         Scanner scanner = new Scanner(System.in);
         String stopper = "";
         while (!stopper.equals("stop")) {
-            order.put("guitar", 4);
-            order.put("trumpet", 6);
-            order.put("piano", 2);
+            order.put("Guitar", 3);
+            order.put("Trumpet", 2);
+            order.put("Piano", 1);
 
-            System.out.println("You ordered: " + order.toString());
-            availableToOrder = (currentMusicShop.prepareInstruments(order));
-            System.out.println("Now, available to order:");
-
-            for(int i=0; i<availableToOrder.size(); i++){
-                MusicInstrument current = availableToOrder.get(i);
-                if(current.getName().equals("Guitar"))
-                    System.out.println;
-                System.out.print(availableToOrder.get(i).getName());
-
-            }
-            // availableToOrder.add((MusicInstrument)currentMusicShop.prepareInstruments(order));
-
+            availableToOrder = currentMusicShop.prepareInstruments(order);
             stopper = scanner.next();
 
         }

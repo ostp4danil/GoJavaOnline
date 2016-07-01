@@ -5,14 +5,11 @@ package com.goit.gojavaonline.module06.second;
  */
 class Piano extends MusicInstrument {
 
-    private static int value=0;
 
     public Piano(String name){
-        super(name, value+1);
-        value+=1;
+    super(name);
+
     }
-
-
 
 
 }

@@ -5,14 +5,9 @@ package com.goit.gojavaonline.module06.second;
  */
 class Trumpet extends MusicInstrument {
 
-    private static int value = 0;
-
     public Trumpet(String name){
-        super(name, value+1);
-        value+=1;
+        super(name);
+
     }
 
-    public static int getValue() {
-        return value;
-    }
 }

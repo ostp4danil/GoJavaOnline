@@ -6,11 +6,13 @@ package com.goit.gojavaonline.module06.second;
 public class Runner {
     public static void main(String[] args) {
 
-        MusicShop.addInstuments();
-        MusicShop.showAll();
-        Order.createOrder();
-        MusicShop.showOrder();
-        MusicShop.showAll();
 
+        MusicShop firstMusicShop = new MusicShop();
+        firstMusicShop.pushInstrument(new Piano("Piano"),25);
+        firstMusicShop.pushInstrument(new Trumpet("Trumpet"), 48);
+        firstMusicShop.pushInstrument(new Guitar("Guitar"), 50);
+
+        Order currentOrder = new Order();
+        currentOrder.createOrder(firstMusicShop);
     }
 }

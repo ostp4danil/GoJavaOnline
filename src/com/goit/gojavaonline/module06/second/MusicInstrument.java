@@ -9,22 +9,13 @@ import java.util.Scanner;
 abstract class MusicInstrument {
 
     private String name;
-    private static int elementsValue;
 
-    protected MusicInstrument(String name, int elementsValue){
+    public MusicInstrument(String name){
         this.name = name;
-        this.elementsValue = elementsValue;
-    }
-
-    public static int getElementsValue(){
-        return elementsValue;
     }
 
     public String getName() {
         return name;
     }
 
-    public static void setElementsValue(int elementsValue) {
-        MusicInstrument.elementsValue = elementsValue;
-    }
 }

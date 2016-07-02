@@ -9,27 +9,30 @@ import java.util.Set;
 class MusicShop {
 
 
-    private List<MusicInstrument> availableInstruments = new ArrayList<MusicInstrument>();
+    private List<MusicInstrument> availableInstruments = new ArrayList<>();
 
 
-    public void pushInstrument(MusicInstrument instrument, int value) {
-        for (int i = 0; i < value; i++) {
-            availableInstruments.add(instrument);
-        }
+    public MusicShop(List<MusicInstrument> availableInstruments) {
+
+        this.availableInstruments = availableInstruments;
     }
 
-    public void listingInsruments(int toRemove, String nameOfRemove) {
+    private List<MusicInstrument> listingInstruments(int toRemove, String nameOfRemove) {
 
-        for (int i = 0; i < availableInstruments.size(); i++) {
-            String tmp = availableInstruments.get(i).getName();
+        List<MusicInstrument> order = new ArrayList<>();
+        for (MusicInstrument instrument : availableInstruments) {
+            String tmp = instrument.getName();
+            if (toRemove == 0) {
+                break;
+            }
+
             if (tmp.equals(nameOfRemove)) {
-                availableInstruments.remove(i);
+                order.add(instrument);
                 toRemove--;
             }
-            if (toRemove==0) {break;}
-        }
 
-        // return availableInstruments;
+        }
+        return order;
 
 
     }
@@ -37,24 +40,18 @@ class MusicShop {
 
     public List<MusicInstrument> prepareInstruments(Map<String, Integer> order) {
 
-
-        Set keyset = order.keySet();
+        List<MusicInstrument> sent = new ArrayList<>();
+        Set<String> keyset = order.keySet();
         String[] names = new String[keyset.size()];
         keyset.toArray(names);
         for (int i = 0; i < names.length; i++) {
-            listingInsruments(order.get(names[i]), names[i]);
-            //System.out.println(names[0] +  names[1]+ names[2]);
+            sent.addAll(listingInstruments(order.get(names[i]), names[i]));
         }
+        availableInstruments.removeAll(sent);
+        return sent;
+    }
+
+    public List<MusicInstrument> getAvailableInstruments() {
         return availableInstruments;
-
     }
-
-    public void showAll() {
-        System.out.println("All instruments: ");
-        for (int i = 0; i < availableInstruments.size(); i++) {
-            System.out.println(availableInstruments.get(i).getName() + " ");
-        }
-    }
-
-
 }

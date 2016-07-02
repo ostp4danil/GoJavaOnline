@@ -18,4 +18,9 @@ abstract class MusicInstrument {
         return name;
     }
 
+
+    @Override
+    public String toString(){
+        return name;
+    }
 }

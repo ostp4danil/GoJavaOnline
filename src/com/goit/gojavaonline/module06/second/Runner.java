@@ -8,7 +8,7 @@ import java.util.Map;
 
 
 public class Runner {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws RangeException, UnknownInstrumentException {
 
 
         List<MusicInstrument> firstInstrumentsPack = new ArrayList<>();
@@ -21,31 +21,24 @@ public class Runner {
 
         MusicShop firstMusicShop = new MusicShop(firstInstrumentsPack);
         Map<String, Integer> order = new HashMap<>();
+        System.out.println("Now avaliable: " + firstMusicShop.getInstrumentsList()+"\n");
 
         order.put("guitar",3);
         order.put("trumpet", 4);
         order.put("piano", 1);
-        List<MusicInstrument> tokenOrder;
-        tokenOrder = firstMusicShop.prepareInstruments(order);
-        System.out.println("You ordered: " + tokenOrder);
-        System.out.println(firstMusicShop.getAvaliableString());
+        List<MusicInstrument> takenOrder;
+        takenOrder = firstMusicShop.prepareInstruments(order);
+        System.out.println("You ordered: " + takenOrder);
+        System.out.println("Now available: " + firstMusicShop.getInstrumentsList());
         order.clear();
 
-        order.put("guitar", 1);
-        order.put("trumpet", 0);
-        order.put("piano", 0);
-        order.put("cp", 5);
-        tokenOrder = firstMusicShop.prepareInstruments(order);
-        System.out.println("\nYou ordered: " + tokenOrder);
-        System.out.println(firstMusicShop.getAvaliableString());
-        order.clear();
 
         order.put("guitar", 1);
-        order.put("trumpet", 50);
-        order.put("piano", 0);
-        tokenOrder = firstMusicShop.prepareInstruments(order);
-        System.out.println("\nYou ordered: " + tokenOrder);
-        System.out.println(firstMusicShop.getAvaliableString());
+        order.put("trumpet", 1);
+        order.put("piano", 1);
+        takenOrder = firstMusicShop.prepareInstruments(order);
+        System.out.println("\nYou ordered: " + takenOrder);
+        System.out.println("Now available: " + firstMusicShop.getInstrumentsList());
         order.clear();
     }
 }

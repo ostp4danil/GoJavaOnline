@@ -9,7 +9,6 @@ class MusicShop {
 
 
     private List<MusicInstrument> instrumentsList = new ArrayList<>();
-    private String avaliableString;
 
 
     public MusicShop(List<MusicInstrument> availableInstruments) {
@@ -17,63 +16,47 @@ class MusicShop {
         this.instrumentsList = availableInstruments;
     }
 
-    private List<MusicInstrument> checkOrder(int currentValue, String currentName) {
-        try {
-            if (currentValue < 0 || currentValue > countByName(currentName)) {
-                throw new RangeException(currentValue);
-            }
-            List<MusicInstrument> order = new ArrayList<>();
-            boolean instrumentChecker = false;
-            for (MusicInstrument instrument : instrumentsList) {
-                String tmp = instrument.getName();
-                if (currentValue == 0) {
-                    instrumentChecker = true;
-                    break;
-                } else if (tmp.equals(currentName)) {
-                    order.add(instrument);
-                    currentValue--;
-                    instrumentChecker = true;
-                }
-
-            }
-            if (!instrumentChecker) {
-                throw new UnknownInstrumentException(currentName);
-            }
-            return order;
-        } catch (UnknownInstrumentException e) {
-            System.out.println("ERROR: Instrument " + e.getInstrumentName()
-                    + " not found. Order will be canceled!");
-        } catch (RangeException e) {
-            System.out.println("Order range could not be:" + e.getValue() + ".Order will be canceled!");
+    private List<MusicInstrument> checkOrder(int currentValue, String currentName) throws RangeException, UnknownInstrumentException {
+        if (currentValue < 0 || currentValue > countByName(currentName)) {
+            throw new RangeException(currentValue);
         }
+        List<MusicInstrument> order = new ArrayList<>();
+        boolean instrumentChecker = false;
+        for (MusicInstrument instrument : instrumentsList) {
+            String tmp = instrument.getName();
+            if (currentValue == 0) {
+                instrumentChecker = true;
+                break;
+            } else if (tmp.equals(currentName)) {
+                order.add(instrument);
+                currentValue--;
+                instrumentChecker = true;
+            }
 
-        return null;
+        }
+        if (!instrumentChecker) {
+            throw new UnknownInstrumentException(currentName);
+        }
+        return order;
+
     }
 
 
-        public List<MusicInstrument> prepareInstruments (Map < String, Integer > order) {
-            avaliableString = "Now available:\n";
-            List<MusicInstrument> sent = new ArrayList<>();
-            Set<String> keyset = order.keySet();
-
-            for (String name : keyset) {
-                try {
-                    sent.addAll(checkOrder(order.get(name), name));
-                    instrumentsList.removeAll(sent);
-                   // avaliableString += name + "\t:\t" + countByName(name) + "\n";
-                } catch (NullPointerException e) {
-                    System.out.println("Make valid order!");
-                } finally {
-                    avaliableString += name + "\t:\t" + countByName(name) + "\n";
-                }
-
-            }
-            return sent;
-        }
-
-    public String getAvaliableString() {
-        return avaliableString;
+    public List<MusicInstrument> getInstrumentsList() {
+        return instrumentsList;
     }
+
+    public List<MusicInstrument> prepareInstruments(Map<String, Integer> order) throws RangeException, UnknownInstrumentException {
+        List<MusicInstrument> sent = new ArrayList<>();
+        Set<String> keyset = order.keySet();
+
+        for (String name : keyset) {
+            sent.addAll(checkOrder(order.get(name), name));
+            instrumentsList.removeAll(sent);
+        }
+        return sent;
+    }
+
 
     private int countByName(String name) {
         int value = 0;

@@ -16,7 +16,9 @@ class MusicShop {
         this.instrumentsList = availableInstruments;
     }
 
-    private List<MusicInstrument> checkOrder(int currentValue, String currentName) throws RangeException, UnknownInstrumentException {
+    private List<MusicInstrument> checkOrder(int currentValue, String currentName)
+            throws RangeException, UnknownInstrumentException {
+
         if (currentValue < 0 || currentValue > countByName(currentName)) {
             throw new RangeException(currentValue);
         }

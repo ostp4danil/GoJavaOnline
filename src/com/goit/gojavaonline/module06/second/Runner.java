@@ -28,16 +28,16 @@ public class Runner {
         List<MusicInstrument> tokenOrder;
         tokenOrder = firstMusicShop.prepareInstruments(order);
         System.out.println("You ordered: " + tokenOrder);
-        System.out.println("Now avaliable: " + firstMusicShop.getAvailableInstruments());
+       // System.out.println("Now avaliable: " + firstMusicShop.getAvailableInstruments());
 
         order.clear();
         order.put("guitar", 1);
         order.put("trumpet", 0);
         order.put("piano", 0);
+        order.put("cp", 5);
         tokenOrder = firstMusicShop.prepareInstruments(order);
         System.out.println("\nYou ordered: " + tokenOrder);
 
-        System.out.println("Now avaliable: " + firstMusicShop.getAvailableInstruments());
         order.clear();
 
     }

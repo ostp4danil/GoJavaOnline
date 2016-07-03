@@ -16,36 +16,31 @@ class MusicShop {
         this.instrumentsList = availableInstruments;
     }
 
-    private List<MusicInstrument> addToOrder(int currentValue, String currentName)
+    private List<MusicInstrument> selectInstruments(int summary, String name)
             throws RangeException, UnknownInstrumentException {
 
-        if (currentValue < 0 || currentValue > countByName(currentName)) {
-            throw new RangeException(currentValue);
+        if (summary < 0 || summary > countByName(name)) {
+            throw new RangeException(summary);
         }
-        List<MusicInstrument> order = new ArrayList<>();
-        boolean isAvaliable = false;
+        List<MusicInstrument> selected = new ArrayList<>();
+        boolean isAvailable = false;
         for (MusicInstrument instrument : instrumentsList) {
             String tmp = instrument.getName();
-            if (currentValue == 0) {
-                isAvaliable = true;
+            if (summary == 0) {
+                isAvailable = true;
                 break;
-            } else if (tmp.equals(currentName)) {
-                order.add(instrument);
-                currentValue--;
-                isAvaliable = true;
+            } else if (tmp.equals(name)) {
+                selected.add(instrument);
+                summary--;
+                isAvailable = true;
             }
 
         }
-        if (!isAvaliable) {
-            throw new UnknownInstrumentException(currentName);
+        if (!isAvailable) {
+            throw new UnknownInstrumentException(name);
         }
-        return order;
+        return selected;
 
-    }
-
-
-    public List<MusicInstrument> getInstrumentsList() {
-        return instrumentsList;
     }
 
     public List<MusicInstrument> prepareInstruments(Map<String, Integer> order)
@@ -55,11 +50,17 @@ class MusicShop {
         Set<String> names = order.keySet();
 
         for (String name : names) {
-            prepared.addAll(addToOrder(order.get(name), name));
+            prepared.addAll(selectInstruments(order.get(name), name));
             instrumentsList.removeAll(prepared);
         }
         return prepared;
     }
+
+
+    public List<MusicInstrument> getInstrumentsList() {
+        return instrumentsList;
+    }
+
 
 
     private int countByName(String name) {

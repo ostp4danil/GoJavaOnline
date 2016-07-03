@@ -51,14 +51,14 @@ class MusicShop {
     public List<MusicInstrument> prepareInstruments(Map<String, Integer> order)
             throws RangeException, UnknownInstrumentException {
 
-        List<MusicInstrument> instrumentsToSend = new ArrayList<>();
+        List<MusicInstrument> prepeared = new ArrayList<>();
         Set<String> perInstrument = order.keySet();
 
         for (String name : perInstrument) {
-            instrumentsToSend.addAll(sendInstrument(order.get(name), name));
-            instrumentsList.removeAll(instrumentsToSend);
+            prepeared.addAll(sendInstrument(order.get(name), name));
+            instrumentsList.removeAll(prepeared);
         }
-        return instrumentsToSend;
+        return prepeared;
     }
 
 

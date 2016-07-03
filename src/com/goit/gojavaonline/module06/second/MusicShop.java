@@ -16,7 +16,7 @@ class MusicShop {
         this.instrumentsList = availableInstruments;
     }
 
-    private List<MusicInstrument> sendInstrument(int currentValue, String currentName)
+    private List<MusicInstrument> addToOrder(int currentValue, String currentName)
             throws RangeException, UnknownInstrumentException {
 
         if (currentValue < 0 || currentValue > countByName(currentName)) {
@@ -51,14 +51,14 @@ class MusicShop {
     public List<MusicInstrument> prepareInstruments(Map<String, Integer> order)
             throws RangeException, UnknownInstrumentException {
 
-        List<MusicInstrument> prepeared = new ArrayList<>();
-        Set<String> perInstrument = order.keySet();
+        List<MusicInstrument> prepared = new ArrayList<>();
+        Set<String> names = order.keySet();
 
-        for (String name : perInstrument) {
-            prepeared.addAll(sendInstrument(order.get(name), name));
-            instrumentsList.removeAll(prepeared);
+        for (String name : names) {
+            prepared.addAll(addToOrder(order.get(name), name));
+            instrumentsList.removeAll(prepared);
         }
-        return prepeared;
+        return prepared;
     }
 
 

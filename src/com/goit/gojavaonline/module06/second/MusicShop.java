@@ -16,28 +16,37 @@ class MusicShop {
         this.instrumentsList = availableInstruments;
     }
 
-    private List<MusicInstrument> selectInstruments(int summary, String name)
-            throws RangeException, UnknownInstrumentException {
-
-        if (summary < 0 || summary > countByName(name)) {
-            throw new RangeException(summary);
-        }
-        List<MusicInstrument> selected = new ArrayList<>();
-        boolean isAvailable = false;
+    public boolean isValid(String name) throws UnknownInstrumentException {
+        boolean validator = false;
         for (MusicInstrument instrument : instrumentsList) {
             String tmp = instrument.getName();
-            if (summary == 0) {
-                isAvailable = true;
-                break;
-            } else if (tmp.equals(name)) {
-                selected.add(instrument);
-                summary--;
-                isAvailable = true;
+            if (tmp.equals(name)) {
+                validator = true;
             }
 
         }
-        if (!isAvailable) {
+        if (!validator) {
             throw new UnknownInstrumentException(name);
+        }
+        return validator;
+
+    }
+
+    private List<MusicInstrument> selectInstruments(int sum, String name) throws RangeException {
+
+        if (sum < 0 || sum > countByName(name)) {
+            throw new RangeException(sum);
+        }
+        List<MusicInstrument> selected = new ArrayList<>();
+        for (MusicInstrument instrument : instrumentsList) {
+            String tmp = instrument.getName();
+            if (sum == 0) {
+                break;
+            } else if (tmp.equals(name)) {
+                selected.add(instrument);
+                sum--;
+            }
+
         }
         return selected;
 
@@ -50,8 +59,10 @@ class MusicShop {
         Set<String> names = order.keySet();
 
         for (String name : names) {
-            prepared.addAll(selectInstruments(order.get(name), name));
-            instrumentsList.removeAll(prepared);
+            if (isValid(name)) {
+                prepared.addAll(selectInstruments(order.get(name), name));
+                instrumentsList.removeAll(prepared);
+            }
         }
         return prepared;
     }
@@ -60,7 +71,6 @@ class MusicShop {
     public List<MusicInstrument> getInstrumentsList() {
         return instrumentsList;
     }
-
 
 
     private int countByName(String name) {

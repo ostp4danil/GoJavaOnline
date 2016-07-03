@@ -23,20 +23,20 @@ class MusicShop {
             throw new RangeException(currentValue);
         }
         List<MusicInstrument> order = new ArrayList<>();
-        boolean instrumentChecker = false;
+        boolean isAvaliable = false;
         for (MusicInstrument instrument : instrumentsList) {
             String tmp = instrument.getName();
             if (currentValue == 0) {
-                instrumentChecker = true;
+                isAvaliable = true;
                 break;
             } else if (tmp.equals(currentName)) {
                 order.add(instrument);
                 currentValue--;
-                instrumentChecker = true;
+                isAvaliable = true;
             }
 
         }
-        if (!instrumentChecker) {
+        if (!isAvaliable) {
             throw new UnknownInstrumentException(currentName);
         }
         return order;

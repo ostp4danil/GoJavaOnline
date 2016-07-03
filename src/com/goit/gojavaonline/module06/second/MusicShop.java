@@ -48,7 +48,9 @@ class MusicShop {
         return instrumentsList;
     }
 
-    public List<MusicInstrument> prepareInstruments(Map<String, Integer> order) throws RangeException, UnknownInstrumentException {
+    public List<MusicInstrument> prepareInstruments(Map<String, Integer> order)
+            throws RangeException, UnknownInstrumentException {
+
         List<MusicInstrument> sent = new ArrayList<>();
         Set<String> keyset = order.keySet();
 

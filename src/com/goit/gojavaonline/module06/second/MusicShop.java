@@ -52,10 +52,13 @@ class MusicShop {
         Set<String> names = order.keySet();
 
         for (String name : names) {
-            if (isValid(name) && order.get((name))>=0 && order.get(name)<=countByName(name)) {
+            if (isValid(name)) {
                 prepared.addAll(selectInstruments(order.get(name), name));
                 instrumentsList.removeAll(prepared);
             } else{
+                if (order.get((name))>=0 && order.get(name)<=countByName(name)){
+                    throw new RangeException(order.get(name));
+                }
                     throw new UnknownInstrumentException(name);
             }
         }

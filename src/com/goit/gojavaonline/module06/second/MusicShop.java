@@ -16,27 +16,20 @@ class MusicShop {
         this.instrumentsList = availableInstruments;
     }
 
-    public boolean isValid(String name) throws UnknownInstrumentException {
-        boolean validator = false;
+    public boolean isValid(String name) {
         for (MusicInstrument instrument : instrumentsList) {
             String tmp = instrument.getName();
             if (tmp.equals(name)) {
-                validator = true;
+                return true;
             }
 
         }
-        if (!validator) {
-            throw new UnknownInstrumentException(name);
-        }
-        return validator;
+        return false;
 
     }
 
-    private List<MusicInstrument> selectInstruments(int sum, String name) throws RangeException {
+    private List<MusicInstrument> selectInstruments(int sum, String name) {
 
-        if (sum < 0 || sum > countByName(name)) {
-            throw new RangeException(sum);
-        }
         List<MusicInstrument> selected = new ArrayList<>();
         for (MusicInstrument instrument : instrumentsList) {
             String tmp = instrument.getName();
@@ -59,9 +52,11 @@ class MusicShop {
         Set<String> names = order.keySet();
 
         for (String name : names) {
-            if (isValid(name)) {
+            if (isValid(name) && order.get((name))>=0 && order.get(name)<=countByName(name)) {
                 prepared.addAll(selectInstruments(order.get(name), name));
                 instrumentsList.removeAll(prepared);
+            } else{
+                    throw new UnknownInstrumentException(name);
             }
         }
         return prepared;

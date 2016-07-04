@@ -24,7 +24,7 @@ public class Runner {
         System.out.println("Now avaliable: " + firstMusicShop.getInstrumentsList()+"\n");
 
         order.put("guitar",3);
-        order.put("trumpet", 4);
+        order.put("trumpet", 3);
         order.put("piano", 1);
         List<MusicInstrument> takenOrder;
         takenOrder = firstMusicShop.prepareInstruments(order);
@@ -34,8 +34,16 @@ public class Runner {
 
 
         order.put("guitar", 1);
-        order.put("trumpet", 1);
+        order.put("trumpet", 2);
         order.put("piano", 1);
+        takenOrder = firstMusicShop.prepareInstruments(order);
+        System.out.println("\nYou ordered: " + takenOrder);
+        System.out.println("Now available: " + firstMusicShop.getInstrumentsList());
+        order.clear();
+
+        order.put("guitar", 0);
+        order.put("trumpet", 0);
+        order.put("piano", 0);
         takenOrder = firstMusicShop.prepareInstruments(order);
         System.out.println("\nYou ordered: " + takenOrder);
         System.out.println("Now available: " + firstMusicShop.getInstrumentsList());

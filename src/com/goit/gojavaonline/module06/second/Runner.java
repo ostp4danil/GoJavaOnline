@@ -49,9 +49,9 @@ public class Runner {
             System.out.println("Now available:\n" + firstMusicShop.showInstruments());
             order.clear();
         } catch (RangeException e) {
-            System.out.println("\nError! Order canceled. Wrong data: " + e.getValue());
+            System.out.println("\nError! Order canceled. Wrong amount: " + e.getValue() + " of " +e.getName());
         } catch (UnknownInstrumentException e) {
-            System.out.println("\nError! Order canceled. Wrong data: " + e.getInstrumentName());
+            System.out.println("\nError! Order canceled. Wrong instrument: " + e.getInstrumentName());
         }
 
     }

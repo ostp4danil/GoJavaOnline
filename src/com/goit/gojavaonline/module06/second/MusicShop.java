@@ -23,7 +23,7 @@ class MusicShop {
                 if (amount > 0 && amount <= countByName(name)) {
                     return true;
                 } else {
-                    throw new RangeException(amount);
+                    throw new RangeException(amount, name);
                 }
             }
         }

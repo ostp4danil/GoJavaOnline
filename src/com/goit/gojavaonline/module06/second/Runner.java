@@ -13,40 +13,46 @@ public class Runner {
 
         List<MusicInstrument> firstInstrumentsPack = new ArrayList<>();
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 2; i++) {
             firstInstrumentsPack.add(new Piano("piano"));
-            firstInstrumentsPack.add(new Trumpet("trumpet"));
+        }
+        for (int i = 0; i < 16; i++) {
             firstInstrumentsPack.add(new Guitar("guitar"));
+        }
+        for (int i = 0; i < 7; i++) {
+            firstInstrumentsPack.add(new Guitar("trumpet"));
         }
 
         MusicShop firstMusicShop = new MusicShop(firstInstrumentsPack);
         Map<String, Integer> order = new HashMap<>();
-        System.out.println("Now avaliable: " + firstMusicShop.getInstrumentsList()+"\n");
+        System.out.println("Now avaliable:\n" + firstMusicShop.showInstruments() + "\n");
+        List<MusicInstrument> finishedOrder;
+        try {
+            order.put("guitar", 7);
+            order.put("trumpet", 2);
+            finishedOrder = firstMusicShop.prepareInstruments(order);
+            System.out.println("You ordered: " + finishedOrder);
+            System.out.println("Now available:\n" + firstMusicShop.showInstruments());
+            order.clear();
 
-        order.put("guitar",3);
-        order.put("trumpet", 3);
-        order.put("piano", 1);
-        List<MusicInstrument> takenOrder;
-        takenOrder = firstMusicShop.prepareInstruments(order);
-        System.out.println("You ordered: " + takenOrder);
-        System.out.println("Now available: " + firstMusicShop.getInstrumentsList());
-        order.clear();
+            order.put("piano", 1);
+            finishedOrder = firstMusicShop.prepareInstruments(order);
+            System.out.println("\nYou ordered: " + finishedOrder);
+            System.out.println("Now available:\n" + firstMusicShop.showInstruments());
+            order.clear();
 
+            order.put("piano", 1);
+            order.put("guitar", 9);
+            order.put("trumpet", 6);
+            finishedOrder = firstMusicShop.prepareInstruments(order);
+            System.out.println("\nYou ordered: " + finishedOrder);
+            System.out.println("Now available:\n" + firstMusicShop.showInstruments());
+            order.clear();
+        } catch (RangeException e) {
+            System.out.println("\nError! Order canceled. Wrong data: " + e.getValue());
+        } catch (UnknownInstrumentException e) {
+            System.out.println("\nError! Order canceled. Wrong data: " + e.getInstrumentName());
+        }
 
-        order.put("guitar", 1);
-        order.put("trumpet", 2);
-        order.put("piano", 1);
-        takenOrder = firstMusicShop.prepareInstruments(order);
-        System.out.println("\nYou ordered: " + takenOrder);
-        System.out.println("Now available: " + firstMusicShop.getInstrumentsList());
-        order.clear();
-
-        order.put("guitar", 0);
-        order.put("trumpet", 0);
-        order.put("piano", 0);
-        takenOrder = firstMusicShop.prepareInstruments(order);
-        System.out.println("\nYou ordered: " + takenOrder);
-        System.out.println("Now available: " + firstMusicShop.getInstrumentsList());
-        order.clear();
     }
 }

@@ -5,14 +5,14 @@ import java.beans.Expression;
 /**
  * Created by Danil-MAC on 7/3/16.
  */
-public class RangeException extends Exception{
+public class RangeException extends Exception {
     private int value;
 
-    public RangeException(final int value){
+    public RangeException(final int value) {
         this.value = value;
     }
 
-    public int getValue(){
+    public int getValue() {
         return value;
     }
 }

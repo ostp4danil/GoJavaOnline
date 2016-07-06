@@ -8,11 +8,12 @@ class Rectangle implements Area {
     private double b;
 
     Rectangle(double a, double b) {
-        this.a = a;
-        this.b = b;
         if (a <= 0 || b <= 0) {
             throw new IllegalArgumentException("Wrong data: " + a + b);
         }
+        this.a = a;
+        this.b = b;
+
     }
 
     @Override

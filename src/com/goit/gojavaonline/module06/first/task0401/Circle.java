@@ -10,10 +10,10 @@ class Circle implements Area {
     private double radius;
 
     Circle(double radius) {
-        this.radius = radius;
         if (radius < 0) {
             throw new IllegalArgumentException("Wrong radius: " + radius);
         }
+        this.radius = radius;
     }
 
     @Override

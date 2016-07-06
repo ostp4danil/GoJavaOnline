@@ -1,10 +1,6 @@
 package com.goit.gojavaonline.module06.second;
 
-import java.beans.Expression;
 
-/**
- * Created by Danil-MAC on 7/3/16.
- */
 public class RangeException extends Exception {
     private int value;
     private String name;

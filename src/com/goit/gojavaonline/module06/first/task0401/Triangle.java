@@ -7,12 +7,12 @@ class Triangle implements Area {
 
 
     Triangle(double a, double b, double c) {
-        this.a = a;
-        this.b = b;
-        this.c = c;
         if (a <= 0 || b <= 0 || c <= 0) {
             throw new IllegalArgumentException("Wrong data: " + a  + b + c);
         }
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
     @Override

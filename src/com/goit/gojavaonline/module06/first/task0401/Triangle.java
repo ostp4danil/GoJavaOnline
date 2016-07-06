@@ -10,13 +10,15 @@ class Triangle implements Area {
         this.a = a;
         this.b = b;
         this.c = c;
+        if (a <= 0 || b <= 0 || c <= 0) {
+            throw new IllegalArgumentException("Wrong data: " + a  + b + c);
+        }
     }
 
     @Override
-    public double calculateArea()
-    {
-        double p=(a+b+c)/2;
-        return  Math.sqrt(p*(p-a)+p*(p-b)+p*(p-c));
+    public double calculateArea() {
+        double p = (a + b + c) / 2;
+        return Math.sqrt(p * (p - a) + p * (p - b) + p * (p - c));
     }
 
 }

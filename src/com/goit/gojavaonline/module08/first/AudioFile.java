@@ -1,11 +1,9 @@
 package com.goit.gojavaonline.module08.first;
 
-/**
- * Created by Danil-MAC on 22.06.16.
- */
+import java.util.Formatter;
+
 class AudioFile extends File {
     private int bitrate;
-    private static String audioStaticOutput = String.format(staticOutput, "Bitrate");
 
     public AudioFile(String name, double size, int bitrate) {
         super(name, size);
@@ -13,13 +11,17 @@ class AudioFile extends File {
     }
 
     @Override
-    public String toString() {
-        if (audioStaticOutput != null) {
-            System.out.printf(audioStaticOutput);
-            audioStaticOutput = null;
-        }
-        String output = "\n" + super.toString() + "\t" + bitrate;
-        return output;
+    protected Formatter getHeader(){
+        Formatter formatter = super.getHeader();
+        formatter.format("%20.20s", "Bitrate");
+        return formatter;
     }
 
+    public int getBitrate() {
+        return bitrate;
+    }
+
+    public String getUniqueString() {
+        return String.valueOf(getBitrate());
+    }
 }

@@ -1,23 +1,36 @@
 package com.goit.gojavaonline.module08.first;
 
-/**
- * Created by Danil-MAC on 22.06.16.
- */
+import java.util.Collection;
+import java.util.Formatter;
+
 abstract class File {
 
     private String name;
     private double size;
-    protected static String staticOutput = "Name\t\t\t Size \t\t %s \n";
 
-    public File(String name, double size) {
+    protected File(String name, double size) {
         this.name = name;
         this.size = size;
     }
 
-    @Override
-    public String toString() {
-        String output = name + "\t\t\t " + size + " \t\t";
-        return output;
+    protected Formatter getHeader() {
+        Formatter formatter = new Formatter();
+        formatter.format("%20.20s", "Name");
+        formatter.format("%20.20s", "Size");
+        return formatter;
     }
+
+    protected String getName() {
+        return name;
+    }
+
+    protected double getSize() {
+        return size;
+    }
+
+    protected String getUniqueString() {
+        return "Error! Something went wrong.";
+    }
+
 
 }

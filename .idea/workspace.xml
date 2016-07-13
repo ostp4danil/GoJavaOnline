@@ -3,63 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="16bcf66a-51c8-4756-bae9-26c870fe2614" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/collections01/MyArrayList.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/collections01/Runner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module01/MyFirstJavaProgram.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module02/Files.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module02/Flovers.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module02/Music.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/Aster.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/Bouquet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/Chamomile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/Flower.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/Rose.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/RoseBush.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/Tulip.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/second/AudioFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/second/Directory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/second/File.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/second/Imagefile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/second/TextFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/third/Guitar.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/third/MusicInstrument.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/third/MusicShop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/third/Piano.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/third/Trumbet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Area.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Circle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Rectangle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Runner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Triangle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/second/TempConvertion.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/second/TemperatureDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/third/DistanceSearcher.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/third/Point.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/third/PointDemo.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module05/first/ArrayUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module05/first/Runner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module05/second/Runner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/first/task0401/Area.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/first/task0401/Circle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/first/task0401/Rectangle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/first/task0401/Runner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/first/task0401/Triangle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/first/task0401/WrongFigureException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/Guitar.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/MusicInstrument.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/MusicShop.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/Piano.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/RangeException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/Runner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/Trumpet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/UnknownInstrumentException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module08/first/AudioFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module08/first/Directory.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module08/first/File.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module08/first/Imagefile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module08/first/Runner.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module08/first/Table.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module08/first/TextFile.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module08/first/Table.class" afterPath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module08/first/Table.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -218,66 +162,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="GoJavaOnline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoJavaOnline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoJavaOnline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gojavaonline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module08" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="first" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoJavaOnline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GoJavaOnline" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="goit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gojavaonline" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -725,12 +609,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1468412751466</updated>
-      <workItem from="1468412753143" duration="194000" />
+      <workItem from="1468412753143" duration="233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="194000" />
+    <option name="totallyTimeSpent" value="233000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="6" />
@@ -738,16 +622,17 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.329235" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -768,6 +653,10 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/first/Imagefile.java">

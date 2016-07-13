@@ -1,11 +1,9 @@
-package com.goit.gojavaonline.module08.first;
+package com.goit.gojavaonline.module08.tableandsort;
 
-import com.goit.gojavaonline.module08.second.FileSort;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.goit.gojavaonline.module08.second.FileSort.sortBySize;
 
 /**
  * Created by Danil-MAC on 7/9/16.
@@ -27,14 +25,14 @@ public class Runner {
         list.add(new TextFile("Azbuka", 300, 9687543));
         list.add(new TextFile("Azbuka", 300, 9687543));
 
-        Table.printTable(list);
+        FileIUtils.printTable(list);
 
-        List<File> sortedList = FileSort.sortByName(list);
+        List<File> sortedList = FileIUtils.sortByName(list);
         System.out.println("\n\n Print sorted by name:");
-        Table.printAll(sortedList);
+        FileIUtils.printAll(sortedList);
 
-        sortedList = sortBySize(list);
+        sortedList = FileIUtils.sortBySize(list);
         System.out.println("\n\n Print sorted by Size:");
-        Table.printAll(sortedList);
+        FileIUtils.printAll(sortedList);
     }
 }

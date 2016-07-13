@@ -1,4 +1,4 @@
-package com.goit.gojavaonline.module08.first;
+package com.goit.gojavaonline.module08.tableandsort;
 
 import java.util.Formatter;
 

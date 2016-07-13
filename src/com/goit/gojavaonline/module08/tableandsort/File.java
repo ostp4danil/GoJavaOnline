@@ -1,12 +1,11 @@
-package com.goit.gojavaonline.module08.first;
+package com.goit.gojavaonline.module08.tableandsort;
 
-import java.util.Collection;
 import java.util.Formatter;
 
 public abstract class File {
 
-    private String name;
-    private double size;
+    protected String name;
+    protected double size;
 
     protected File(String name, double size) {
         this.name = name;

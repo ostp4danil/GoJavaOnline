@@ -1,14 +1,11 @@
-package com.goit.gojavaonline.module08.first;
+package com.goit.gojavaonline.module08.tableandsort;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Formatter;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by Danil-MAC on 7/7/16.
  */
-public abstract class Table {
+public abstract class FileIUtils {
 
 
     public static void printTable(Collection collection) {
@@ -47,7 +44,38 @@ public abstract class Table {
     }
 
     public static void printAll(List<File> collection){
-        collection.forEach(Table::printCurrentFile);
+        collection.forEach(FileIUtils::printCurrentFile);
+    }
+
+    public static List<File> sortByName(List<File> files) {
+        List<File> sortingFiles = files;
+
+        for (int i = 0; i < sortingFiles.size(); i++) {
+            for (int j = i + 1; j < sortingFiles.size(); j++) {
+                String firstFileName = sortingFiles.get(i).getName();
+                String secondFileName = sortingFiles.get(j).getName();
+                if (firstFileName.compareTo(secondFileName) > 0) {
+                    Collections.swap(sortingFiles, i, j);
+                }
+            }
+        }
+
+        return sortingFiles;
+    }
+
+    public static List<File> sortBySize(List<File> files) {
+        List<File> sortingFiles = files;
+        for (int i = 0; i < sortingFiles.size(); i++) {
+            for (int j = i + 1; j < sortingFiles.size(); j++) {
+                double firstFileSize = sortingFiles.get(i).getSize();
+                double secondFileSize = sortingFiles.get(j).getSize();
+                if (firstFileSize < (secondFileSize)) {
+                    Collections.swap(sortingFiles, i, j);
+                }
+            }
+        }
+        return sortingFiles;
+
     }
 
 }

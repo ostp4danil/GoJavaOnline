@@ -2,7 +2,7 @@ package com.goit.gojavaonline.module08.first;
 
 import java.util.Formatter;
 
-class AudioFile extends File {
+public class AudioFile extends File {
     private int bitrate;
 
     public AudioFile(String name, double size, int bitrate) {

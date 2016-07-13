@@ -3,7 +3,7 @@ package com.goit.gojavaonline.module08.first;
 import java.util.Collection;
 import java.util.Formatter;
 
-abstract class File {
+public abstract class File {
 
     private String name;
     private double size;
@@ -20,11 +20,11 @@ abstract class File {
         return formatter;
     }
 
-    protected String getName() {
+    public String getName() {
         return name;
     }
 
-    protected double getSize() {
+    public double getSize() {
         return size;
     }
 

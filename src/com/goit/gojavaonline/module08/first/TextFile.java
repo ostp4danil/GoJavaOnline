@@ -2,7 +2,7 @@ package com.goit.gojavaonline.module08.first;
 
 import java.util.Formatter;
 
-class TextFile extends File {
+public class TextFile extends File {
     private int numberOfSymbols;
 
     public TextFile(String name, double size, int numberOfSymbols) {

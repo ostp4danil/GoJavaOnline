@@ -20,7 +20,7 @@ public abstract class Table {
             String className = array.get(counterOfTypes).getClass().toGenericString();
             if (!className.equals(tmpClassName)) {
                 System.out.println(array.get(counterOfTypes).getHeader());
-                removeAndPrint(array, className);
+                printFiles(array, className);
                 tmpClassName = className;
             }
             counterOfTypes++;
@@ -29,7 +29,7 @@ public abstract class Table {
     }
 
 
-    private static void removeAndPrint(List<File> array, String className) {
+    private static void printFiles(List<File> array, String className) {
         for (File file : array) {
             String currentClassName = file.getClass().toGenericString();
             if (currentClassName.equals(className)) {
@@ -44,6 +44,10 @@ public abstract class Table {
         formatter.format("%20.20s", element.getSize());
         formatter.format("%20.20s", element.getUniqueString());
         System.out.println(formatter);
+    }
+
+    public static void printAll(List<File> collection){
+        collection.forEach(Table::printCurrentFile);
     }
 
 }

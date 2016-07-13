@@ -1,7 +1,11 @@
 package com.goit.gojavaonline.module08.first;
 
+import com.goit.gojavaonline.module08.second.FileSort;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.goit.gojavaonline.module08.second.FileSort.sortBySize;
 
 /**
  * Created by Danil-MAC on 7/9/16.
@@ -25,5 +29,12 @@ public class Runner {
 
         Table.printTable(list);
 
+        List<File> sortedList = FileSort.sortByName(list);
+        System.out.println("\n\n Print sorted by name:");
+        Table.printAll(sortedList);
+
+        sortedList = sortBySize(list);
+        System.out.println("\n\n Print sorted by Size:");
+        Table.printAll(sortedList);
     }
 }

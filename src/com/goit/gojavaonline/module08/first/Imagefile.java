@@ -5,7 +5,7 @@ import java.util.Formatter;
 /**
  * Created by Danil-MAC on 22.06.16.
  */
-class Imagefile extends File {
+public class Imagefile extends File {
     private int[] resolution = new int[2];
 
     public Imagefile(String name, int size, int[] resolution) {

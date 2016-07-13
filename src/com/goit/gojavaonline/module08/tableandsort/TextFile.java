@@ -5,7 +5,7 @@ import java.util.Formatter;
 public class TextFile extends File {
     private int numberOfSymbols;
 
-    public TextFile(String name, double size, int numberOfSymbols) {
+    public TextFile(String name, int size, int numberOfSymbols) {
         super(name, size);
         this.numberOfSymbols = numberOfSymbols;
     }
@@ -21,7 +21,7 @@ public class TextFile extends File {
         return numberOfSymbols;
     }
 
-    public String getUniqueString() {
+    public String getUniqueField() {
         return  String.valueOf(getNumberOfSymbols());
     }
 }

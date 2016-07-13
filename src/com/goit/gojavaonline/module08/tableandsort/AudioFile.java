@@ -5,7 +5,7 @@ import java.util.Formatter;
 public class AudioFile extends File {
     private int bitrate;
 
-    public AudioFile(String name, double size, int bitrate) {
+    public AudioFile(String name, int size, int bitrate) {
         super(name, size);
         this.bitrate = bitrate;
     }
@@ -21,7 +21,7 @@ public class AudioFile extends File {
         return bitrate;
     }
 
-    public String getUniqueString() {
+    public String getUniqueField() {
         return String.valueOf(getBitrate());
     }
 }

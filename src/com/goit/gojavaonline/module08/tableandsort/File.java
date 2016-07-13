@@ -5,9 +5,9 @@ import java.util.Formatter;
 public abstract class File {
 
     protected String name;
-    protected double size;
+    protected int size;
 
-    protected File(String name, double size) {
+    protected File(String name, int size) {
         this.name = name;
         this.size = size;
     }
@@ -23,11 +23,11 @@ public abstract class File {
         return name;
     }
 
-    public double getSize() {
+    public int getSize() {
         return size;
     }
 
-    protected String getUniqueString() {
+    protected String getUniqueField() {
         return "Error! Something went wrong.";
     }
 

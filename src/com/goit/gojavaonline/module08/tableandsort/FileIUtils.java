@@ -39,7 +39,7 @@ public abstract class FileIUtils {
         Formatter formatter = new Formatter();
         formatter.format("%20.20s", element.getName());
         formatter.format("%20.20s", element.getSize());
-        formatter.format("%20.20s", element.getUniqueString());
+        formatter.format("%20.20s", element.getUniqueField());
         System.out.println(formatter);
     }
 
@@ -67,8 +67,8 @@ public abstract class FileIUtils {
         List<File> sortingFiles = files;
         for (int i = 0; i < sortingFiles.size(); i++) {
             for (int j = i + 1; j < sortingFiles.size(); j++) {
-                double firstFileSize = sortingFiles.get(i).getSize();
-                double secondFileSize = sortingFiles.get(j).getSize();
+                int firstFileSize = sortingFiles.get(i).getSize();
+                int secondFileSize = sortingFiles.get(j).getSize();
                 if (firstFileSize < (secondFileSize)) {
                     Collections.swap(sortingFiles, i, j);
                 }

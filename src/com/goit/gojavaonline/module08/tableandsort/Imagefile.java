@@ -25,7 +25,7 @@ public class Imagefile extends File {
         return resolution;
     }
 
-    public String getUniqueString() {
+    public String getUniqueField() {
         return resolution[0] + "x" + resolution[1];
     }
 }

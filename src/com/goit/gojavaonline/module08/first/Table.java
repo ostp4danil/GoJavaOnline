@@ -16,7 +16,7 @@ public abstract class Table {
         array.addAll(collection);
         String tmpClassName = "";
         int counterOfTypes = 0;
-        while (array.size()>counterOfTypes){
+        while (array.size() > counterOfTypes) {
             String className = array.get(counterOfTypes).getClass().toGenericString();
             if (!className.equals(tmpClassName)) {
                 System.out.println(array.get(counterOfTypes).getHeader());

@@ -14,7 +14,7 @@ class Imagefile extends File {
     }
 
     @Override
-    protected Formatter getHeader(){
+    protected Formatter getHeader() {
         Formatter formatter = super.getHeader();
         formatter.format("%20.20s", "Resolution");
         return formatter;

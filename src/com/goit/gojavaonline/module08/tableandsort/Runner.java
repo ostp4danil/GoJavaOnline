@@ -3,6 +3,8 @@ package com.goit.gojavaonline.module08.tableandsort;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 
 /**
@@ -27,12 +29,8 @@ public class Runner {
 
         FileIUtils.printTable(list);
 
-        List<File> sortedList = FileIUtils.sortByName(list);
-        System.out.println("\n\n Print sorted by name:");
-        FileIUtils.printAll(sortedList);
-
-        sortedList = FileIUtils.sortBySize(list);
-        System.out.println("\n\n Print sorted by Size:");
-        FileIUtils.printAll(sortedList);
+        FComparator fileSet = new FComparator(list);
+        fileSet.showByName();
+        fileSet.showBySize();
     }
 }

@@ -2,9 +2,6 @@ package com.goit.gojavaonline.module08.tableandsort;
 
 import java.util.*;
 
-/**
- * Created by Danil-MAC on 7/7/16.
- */
 public abstract class FileIUtils {
 
 
@@ -47,7 +44,7 @@ public abstract class FileIUtils {
         collection.forEach(FileIUtils::printCurrentFile);
     }
 
-    public static List<File> sortByName(List<File> files) {
+/*    public static List<File> sortByName(List<File> files) {
         List<File> sortingFiles = files;
 
         for (int i = 0; i < sortingFiles.size(); i++) {
@@ -76,6 +73,6 @@ public abstract class FileIUtils {
         }
         return sortingFiles;
 
-    }
+    }*/
 
 }

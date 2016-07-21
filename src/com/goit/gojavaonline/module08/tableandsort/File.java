@@ -2,7 +2,7 @@ package com.goit.gojavaonline.module08.tableandsort;
 
 import java.util.Formatter;
 
-public abstract class File {
+public abstract class File implements Comparable<File>{
 
     protected String name;
     protected int size;
@@ -19,6 +19,8 @@ public abstract class File {
         return formatter;
     }
 
+
+
     public String getName() {
         return name;
     }
@@ -31,5 +33,27 @@ public abstract class File {
         return "Error! Something went wrong.";
     }
 
+
+
+    @Override public boolean equals(Object other) {
+        if (!(other instanceof File)) {
+            return false;
+        }
+        File otherFile = (File) other;
+        return name.equals(otherFile.name) && size == otherFile.size;
+    }
+
+    @Override public int hashCode() {
+        return name.length()*size; // For example...
+    }
+
+    @Override
+    public int compareTo(File other) {
+
+        if (name.compareTo(other.name)<0 || (name.equals(other.name) && size < other.size)) {
+            return -1;
+        }
+        return name.equals(other.name) && size == other.size ? 0 : 1;
+    }
 
 }

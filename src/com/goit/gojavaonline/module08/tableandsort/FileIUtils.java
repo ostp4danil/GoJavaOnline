@@ -40,9 +40,17 @@ public abstract class FileIUtils {
         System.out.println(formatter);
     }
 
-    public static void printAll(List<File> collection){
+    public static void printAll(List<File> collection) {
         collection.forEach(FileIUtils::printCurrentFile);
     }
+
+    public static void sortFiles(List<File> collection) {
+        FileCompare compared = new FileCompare(collection);
+        collection.clear();
+        collection.addAll(compared.sortedFiles);
+    }
+
+}
 
 /*    public static List<File> sortByName(List<File> files) {
         List<File> sortingFiles = files;
@@ -75,4 +83,4 @@ public abstract class FileIUtils {
 
     }*/
 
-}
+

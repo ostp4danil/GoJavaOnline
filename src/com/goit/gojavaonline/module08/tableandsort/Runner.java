@@ -30,8 +30,8 @@ public class Runner {
         System.out.println("Unsorted table: ");
         FileUtils.printTable(list);
         System.out.println("\nSorted by name: ");
-        FileUtils.printTable(nameSet);
+        FileUtils.printFileList(nameSet);
         System.out.println("\nSorted by size: ");
-        FileUtils.printTable(sizeSet);
+        FileUtils.printFileList(sizeSet);
     }
 }

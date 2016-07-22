@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16bcf66a-51c8-4756-bae9-26c870fe2614" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileCompare.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileComparator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/File.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/File.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileUtils.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/Runner.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/Runner.java" />
     </list>
@@ -27,11 +28,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FileUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="375">
+              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -60,14 +61,14 @@
       <file leaf-file-name="FileComparator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileComparator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            <state relative-caret-position="375">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#619#620#0" expanded="true" />
-                <element signature="e#666#667#0" expanded="true" />
-                <element signature="e#1381#1382#0" expanded="true" />
-                <element signature="e#1428#1429#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#1385#1386#0" expanded="true" />
+                <element signature="e#1432#1433#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -77,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/File.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -93,11 +94,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+            <state relative-caret-position="375">
+              <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -175,11 +176,11 @@
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/Imagefile.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/TextFile.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileCompare.java" />
-        <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/File.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileIUtils.java" />
-        <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileUtils.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileComparator.java" />
+        <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/File.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/Runner.java" />
+        <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileUtils.java" />
       </list>
     </option>
   </component>
@@ -811,12 +812,12 @@
       <workItem from="1468520836257" duration="523000" />
       <workItem from="1468531660375" duration="311000" />
       <workItem from="1468694868052" duration="9419000" />
-      <workItem from="1469085381658" duration="14507000" />
+      <workItem from="1469085381658" duration="15392000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32480000" />
+    <option name="totallyTimeSpent" value="33365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -830,7 +831,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19518073" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35180724" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28674698" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1368,40 +1369,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileComparator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#1385#1386#0" expanded="true" />
+            <element signature="e#1432#1433#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/File.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
-          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/FileComparator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#1381#1382#0" expanded="true" />
-            <element signature="e#1428#1429#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
+        <state relative-caret-position="375">
+          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
           <folding />
         </state>
       </provider>

@@ -36,6 +36,17 @@ public abstract class FileUtils {
         formatter.format("%20.20s", element.getUniqueField());
         System.out.println(formatter);
     }
+
+    public static void printFileList(Collection<File> collection){
+        System.out.printf("%20.20s", "NAME");
+        System.out.printf("%20.20s", "SIZE\n");
+        for (File file: collection){
+            Formatter formatter = new Formatter();
+            formatter.format("%20.20s", file.getName());
+            formatter.format("%20.20s", file.getSize());
+            System.out.println(formatter);
+        }
+    }
 }
 
 

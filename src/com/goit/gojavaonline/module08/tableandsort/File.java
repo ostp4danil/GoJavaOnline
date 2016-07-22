@@ -35,24 +35,4 @@ public abstract class File {
 
 
 
-  /*  @Override public boolean equals(Object other) {
-        if (!(other instanceof File)) {
-            return false;
-        }
-        File otherFile = (File) other;
-        return name.equals(otherFile.name) && size == otherFile.size;
-    }
-
-    @Override public int hashCode() {
-        return name.length()*size; // For example...
-    }
-
-    @Override
-    public int compareTo(File other) {
-        if (name.compareTo(other.name)<0 || (name.equals(other.name) && size < other.size)) {
-            return -1;
-        }
-        return name.equals(other.name) && size == other.size ? 0 : 1;
-    }*/
-
 }

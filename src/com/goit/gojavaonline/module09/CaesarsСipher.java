@@ -5,38 +5,48 @@ package com.goit.gojavaonline.module09;
  */
 public class CaesarsСipher {
 
-    private StringBuilder cipher = new StringBuilder();
     private int shift;
-    private final int firstLetterCode = 'a';
-    private final int lastLetterCode = 'z';
-    private final int igoreSymbolCode = ' ';
+    private char[] alphabet;
 
-    public CaesarsСipher(String text, int shift) {
-        cipher.append(text);
+    public CaesarsСipher(String alphabet, int shift) {
         this.shift = shift;
+        this.alphabet = new char[alphabet.length()];
+        alphabet.getChars(0, alphabet.length(),this.alphabet,0);
     }
 
-    public StringBuilder encode() {
-        int alphabetSize = lastLetterCode - firstLetterCode + 1;
+    private int getIndexInAlphabet(char c){
+        for(int i=0; i<alphabet.length; i++){
+            if (alphabet[i]==c){
+                return i;
+            }
+        }
+        return 0;
+    }
+
+    private void fixAlphabetToDecode(){
+
+    }
+
+    public String encode(String text) {
+        StringBuilder cipher = new StringBuilder();
+        cipher.append(text);
         char[] encoding = new char[cipher.length()];
         cipher.getChars(0, cipher.length(), encoding, 0);
         cipher.delete(0, cipher.length());
         for (int i = 0; i < encoding.length; i++) {
-            if ((int) encoding[i] != igoreSymbolCode) {
-                int newLetterIndex = (int) encoding[i] + (shift % alphabetSize);
-                encoding[i] = (char) newLetterIndex;
+            int indexInAlphabet = getIndexInAlphabet(encoding[i]);
+            if (indexInAlphabet!=0) {
+                int newLetterIndex = (indexInAlphabet + shift) % alphabet.length;
+                encoding[i] = alphabet[newLetterIndex];
             }
             cipher.append(encoding[i]);
         }
-        return cipher;
+        return cipher.toString();
     }
 
-    public StringBuilder decode() {
+    public String decode(String text) {
         shift = -shift;
-        return encode();
+        return encode(text);
     }
 
-    public StringBuilder getCipher() {
-        return cipher;
-    }
 }

@@ -7,11 +7,11 @@ public class Runner {
     public static void main(String[] args) {
         String example = "goit java online";
         System.out.println("Entered text: " + example);
-        CaesarsСipher text = new CaesarsСipher(example, 2);
-        text.encode();
-        System.out.println(text.getCipher().toString());
-        text.decode();
-        System.out.println(text.getCipher().toString());
+        CaesarsСipher cipher = new CaesarsСipher("qwerty",2);
+        String encoded = cipher.encode(example);
+        System.out.println(encoded);
+        String decoded = cipher.decode(encoded);
+        System.out.println(decoded);
 
     }
 }

@@ -2,28 +2,33 @@ package com.goit.gojavaonline.module08.tableandsort;
 
 import java.util.*;
 
-public abstract class FileIUtils {
+public abstract class FileUtils {
 
 
-    public static void printTable(Collection collection) {
-        List<File> array = new ArrayList<>();
-        array.addAll(collection);
+    public static void printTable(Collection<File> collection) {
         String tmpClassName = "";
-        int counterOfTypes = 0;
-        while (array.size() > counterOfTypes) {
-            String className = array.get(counterOfTypes).getClass().toGenericString();
+        Iterator<File> iterator = collection.iterator();
+        for (File f: collection){
+            String className = f.getClass().toGenericString();
             if (!className.equals(tmpClassName)) {
-                System.out.println(array.get(counterOfTypes).getHeader());
-                printFiles(array, className);
+                tmpClassName = className;
+                System.out.println("\n"+f.getHeader());
+                printFiles(collection, className);
+            }
+        }
+      /*  while (iterator.hasNext()) {
+            String className = iterator.next().getClass().toGenericString();
+            if (!className.equals(tmpClassName)) {
+                System.out.println("\n"+iterator.next().getHeader());
+                printFiles(collection, className);
                 tmpClassName = className;
             }
-            counterOfTypes++;
-        }
+        }*/
 
     }
 
 
-    private static void printFiles(List<File> array, String className) {
+    private static void printFiles(Collection<File> array, String className) {
         for (File file : array) {
             String currentClassName = file.getClass().toGenericString();
             if (currentClassName.equals(className)) {
@@ -40,15 +45,17 @@ public abstract class FileIUtils {
         System.out.println(formatter);
     }
 
-    public static void printAll(List<File> collection) {
-        collection.forEach(FileIUtils::printCurrentFile);
+    public static void tmp(Collection<File> f){
+        for (File file: f){
+            System.out.println(file.getName());
+        }
     }
-
-    public static void sortFiles(List<File> collection) {
-        FileCompare compared = new FileCompare(collection);
-        collection.clear();
-        collection.addAll(compared.sortedFiles);
-    }
+//    public static List<File> sortFiles(List<File> collection) {
+//        List<File> sortedList = new ArrayList<>();
+//        FileCompare compared = new FileCompare(collection);
+//        sortedList.addAll(compared.sortedFiles);
+//        return sortedList;
+//    }
 
 }
 

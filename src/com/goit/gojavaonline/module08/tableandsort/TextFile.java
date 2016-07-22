@@ -24,4 +24,5 @@ public class TextFile extends File {
     public String getUniqueField() {
         return  String.valueOf(getNumberOfSymbols());
     }
+
 }

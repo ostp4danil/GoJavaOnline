@@ -24,4 +24,5 @@ public class AudioFile extends File {
     public String getUniqueField() {
         return String.valueOf(getBitrate());
     }
+
 }

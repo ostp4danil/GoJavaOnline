@@ -7,32 +7,7 @@ import java.util.*;
 public class Runner {
     public static void main(String[] args) {
         List<File> list = new ArrayList<>();
-        Comparator<File> nameComparator = new Comparator<File>() {
-            @Override
-            public int compare(File o1, File o2) {
-                if (o1.getName().compareTo(o2.getName()) < 0) {
-                    return -1;
-                } else if (o1.getName().equals(o2.getName())) {
-                    return 0;
-                } else {
-                    return 1;
-                }
-            }
 
-            @Override
-            public int hashCode() {
-                return super.hashCode();
-            }
-
-            @Override
-            public boolean equals(Object obj) {
-                if (!(obj instanceof File)) {
-                    return false;
-                }
-                File other =  (File) obj;
-                return ((File) obj).getName().equals(other.name) && ((File) obj).getSize() == other.size;
-            }
-        };
 
         list.add(new AudioFile("Kirkorov", 15, 320));
         list.add(new AudioFile("Baskov", 40, 512));
@@ -46,13 +21,17 @@ public class Runner {
         list.add(new TextFile("Kursach", 1, 5));
         list.add(new TextFile("Document", 333, 9687543));
 
-        SortedSet<File> set = new TreeSet<>(nameComparator);
-        set.addAll(list);
-        FileUtils.tmp(set);
+        FileComparator comparator = new FileComparator();
+        SortedSet<File> nameSet = new TreeSet<>(comparator.nameComparator);
+        SortedSet<File> sizeSet = new TreeSet<>(comparator.sizeComparator);
+        nameSet.addAll(list);
+        sizeSet.addAll(list);
 
-        System.out.println("Unsorted: ");
+        System.out.println("Unsorted table: ");
         FileUtils.printTable(list);
-        System.out.println("\nSorted: ");
-        FileUtils.printTable(set);
+        System.out.println("\nSorted by name: ");
+        FileUtils.printTable(nameSet);
+        System.out.println("\nSorted by size: ");
+        FileUtils.printTable(sizeSet);
     }
 }

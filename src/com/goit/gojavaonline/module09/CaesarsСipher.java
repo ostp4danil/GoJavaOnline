@@ -11,16 +11,16 @@ public class CaesarsСipher {
     public CaesarsСipher(String alphabet, int shift) {
         this.shift = shift;
         this.alphabet = new char[alphabet.length()];
-        alphabet.getChars(0, alphabet.length(),this.alphabet,0);
+        alphabet.getChars(0, alphabet.length(), this.alphabet, 0);
     }
 
-    private int getIndexInAlphabet(char c){
-        for(int i=0; i<alphabet.length; i++){
-            if (alphabet[i]==c){
+    private int getIndexInAlphabet(char c) {
+        for (int i = 0; i < alphabet.length; i++) {
+            if (alphabet[i] == c) {
                 return i;
             }
         }
-        return 0;
+        return -1;
     }
 
 
@@ -32,9 +32,10 @@ public class CaesarsСipher {
         cipher.delete(0, cipher.length());
         for (int i = 0; i < encoding.length; i++) {
             int indexInAlphabet = getIndexInAlphabet(encoding[i]);
-            if (indexInAlphabet!=0) {
-                int newLetterIndex = (indexInAlphabet + shift) % alphabet.length;
+            if (indexInAlphabet != -1) {
+                int newLetterIndex = Math.abs(indexInAlphabet + shift + alphabet.length) % alphabet.length;
                 encoding[i] = alphabet[newLetterIndex];
+
             }
             cipher.append(encoding[i]);
         }
@@ -42,10 +43,17 @@ public class CaesarsСipher {
     }
 
     public String decode(String text) {
-        shift = -shift;
-        encode(text.toString());
-        shift = -shift;
-        return text.toString();
+        setShift(-getShift());
+        String decoded = encode(text);
+        setShift(-getShift());
+        return decoded;
     }
 
+    private void setShift(int shift) {
+        this.shift = shift;
+    }
+
+    private int getShift() {
+        return shift;
+    }
 }

@@ -5,7 +5,7 @@ package com.goit.gojavaonline.module09;
  */
 public class Runner {
     public static void main(String[] args) {
-        String example = "goit java online";
+        String example = "goitjavaonline";
         System.out.println("Entered text: " + example);
         CaesarsСipher cipher = new CaesarsСipher("qwerty",2);
         String encoded = cipher.encode(example);

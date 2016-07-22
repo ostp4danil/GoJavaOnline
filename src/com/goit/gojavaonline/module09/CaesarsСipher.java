@@ -23,9 +23,6 @@ public class CaesarsСipher {
         return 0;
     }
 
-    private void fixAlphabetToDecode(){
-
-    }
 
     public String encode(String text) {
         StringBuilder cipher = new StringBuilder();

@@ -5,12 +5,12 @@ package com.goit.gojavaonline.module09;
  */
 public class Runner {
     public static void main(String[] args) {
-        String example = "GoITJavaOnline";
+        String example = "goit java online";
         System.out.println("Entered text: " + example);
-        CaesarsСipher text = new CaesarsСipher(example);
-        text.encode(3);
+        CaesarsСipher text = new CaesarsСipher(example, 2);
+        text.encode();
         System.out.println(text.getCipher().toString());
-        text.decode(3);
+        text.decode();
         System.out.println(text.getCipher().toString());
 
     }

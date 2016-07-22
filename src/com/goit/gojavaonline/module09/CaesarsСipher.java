@@ -6,7 +6,7 @@ package com.goit.gojavaonline.module09;
 public class CaesarsСipher {
 
     private int shift;
-    private char[] alphabet;
+    private final char[] alphabet;
 
     public CaesarsСipher(String alphabet, int shift) {
         this.shift = shift;
@@ -43,7 +43,9 @@ public class CaesarsСipher {
 
     public String decode(String text) {
         shift = -shift;
-        return encode(text);
+        encode(text.toString());
+        shift = -shift;
+        return text.toString();
     }
 
 }

@@ -1,8 +1,5 @@
 package com.goit.gojavaonline.module09;
 
-/**
- * Created by Danil-MAC on 7/17/16.
- */
 public class CaesarsСipher {
 
     private int shift;
@@ -25,6 +22,18 @@ public class CaesarsСipher {
 
 
     public String encode(String text) {
+        String decoded = changeText(text,shift);
+        return decoded;
+
+    }
+
+    public String decode(String text) {
+
+        String decoded = changeText(text,-shift);
+        return decoded;
+    }
+
+    private String changeText(String text, int shift){
         StringBuilder cipher = new StringBuilder();
         cipher.append(text);
         char[] encoding = new char[cipher.length()];
@@ -40,20 +49,5 @@ public class CaesarsСipher {
             cipher.append(encoding[i]);
         }
         return cipher.toString();
-    }
-
-    public String decode(String text) {
-        setShift(-getShift());
-        String decoded = encode(text);
-        setShift(-getShift());
-        return decoded;
-    }
-
-    private void setShift(int shift) {
-        this.shift = shift;
-    }
-
-    private int getShift() {
-        return shift;
     }
 }

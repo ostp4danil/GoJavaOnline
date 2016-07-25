@@ -4,3 +4,4 @@ out/*
 
 # class files
 *.class
+/src/com/goit/gojavaonline/test/module11/

@@ -39,7 +39,6 @@ public class StreamOerations {
             while (in.ready()) {
                 readingText.append((char) in.read());
             }
-         //   return readingText.toString();
         } finally {
             in.close();
         }

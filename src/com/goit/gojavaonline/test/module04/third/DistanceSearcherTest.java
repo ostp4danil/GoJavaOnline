@@ -15,18 +15,30 @@ public class DistanceSearcherTest {
     private Point point1;
     private Point point2;
 
-    @Before
-    public void setUp() throws Exception {
-        Random rand = new Random();
-        point1 = new Point(rand.nextInt(), rand.nextInt());
-        point2 = new Point(rand.nextInt(), rand.nextInt());
+    @Test(timeout = 1000)
+    public void WhenSameThen0() throws Exception {
+        point1 = new Point(1,1);
+        point2 = new Point(1,1);
+        double expected = 0;
+        Assert.assertEquals((int) expected % 100, (int) DistanceSearcher.findDistance(point1, point2) % 100);
     }
 
     @Test(timeout = 1000)
-    public void findDistanceTest() throws Exception {
-        double expected = Math.sqrt(Math.pow(point2.getX() - point1.getX(), 2)
-                + Math.pow(point2.getY() - point1.getY(), 2));
-        Assert.assertEquals((int) expected % 100, (int) DistanceSearcher.findDistance(point1, point2) % 100);
+    public void WhenFirst00Second11Then141() throws Exception {
+        point1 = new Point(0,0);
+        point2 = new Point(1,1);
+        double expected = 1.41;
+        Assert.assertEquals((int) expected % 10, (int) DistanceSearcher.findDistance(point1, point2) % 10);
     }
+
+    @Test(timeout = 1000, expected = NullPointerException.class)
+    public void WhenNotInitializeThenNullPointerException() throws Exception {
+        point2 = new Point(1,1);
+        double expected = 0;
+        Assert.assertEquals((int) expected % 10, (int) DistanceSearcher.findDistance(point1, point2) % 10);
+    }
+
+
+
 
 }

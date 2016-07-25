@@ -25,9 +25,9 @@ public class ParameterizedSimpleMathTest {
     @Parameterized.Parameters(name = "(index): multiply ((0]*[1))=[2]")
     public static Iterable<Object[]> data1() {
         return Arrays.asList(new Object[][]{
-                {1, 1, 1},
+                {1, 1, 2},
                 {2, 2, 4},
-                {8, 2, 16},
+                {8, 2, 10},
                 {4, 5, 20}
         });
 
@@ -37,4 +37,5 @@ public class ParameterizedSimpleMathTest {
     public void testMu1t() {
         Assert.assertEquals(expeceted, new SimpleMath().mult(numberA, numberB));
     }
+
 }

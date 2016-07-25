@@ -1,1 +1,1 @@
-goiq java onlint
+goitjavaonline

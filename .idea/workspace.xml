@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16bcf66a-51c8-4756-bae9-26c870fe2614" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/decoded.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example.txt" afterPath="$PROJECT_DIR$/example.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module10/Runner.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module10/Runner.java" />
     </list>
     <ignored path="GoJavaOnline.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,83 +34,6 @@
             <state relative-caret-position="75">
               <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Math.java" pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/src.zip!/java/lang/Math.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18945">
-              <caret line="1335" column="0" selection-start-line="1335" selection-start-column="0" selection-end-line="1335" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#92217#0" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <element signature="e#5367#5368#0" expanded="false" />
-                <element signature="e#5448#5449#0" expanded="false" />
-                <element signature="e#5875#5876#0" expanded="false" />
-                <element signature="e#5956#5957#0" expanded="false" />
-                <element signature="e#6491#6492#0" expanded="false" />
-                <element signature="e#6572#6573#0" expanded="false" />
-                <element signature="e#7218#7219#0" expanded="false" />
-                <element signature="e#7300#7301#0" expanded="false" />
-                <element signature="e#7835#7836#0" expanded="false" />
-                <element signature="e#7917#7918#0" expanded="false" />
-                <element signature="e#8525#8526#0" expanded="false" />
-                <element signature="e#8607#8608#0" expanded="false" />
-                <element signature="e#9016#9017#0" expanded="false" />
-                <element signature="e#9058#9059#0" expanded="false" />
-                <element signature="e#9571#9572#0" expanded="false" />
-                <element signature="e#9613#9614#0" expanded="false" />
-                <element signature="e#10333#10334#0" expanded="false" />
-                <element signature="e#10414#10415#0" expanded="false" />
-                <element signature="e#11119#11120#0" expanded="false" />
-                <element signature="e#11200#11201#0" expanded="false" />
-                <element signature="e#11999#12000#0" expanded="false" />
-                <element signature="e#12082#12083#0" expanded="false" />
-                <element signature="e#14073#14074#0" expanded="false" />
-                <element signature="e#14114#14115#0" expanded="false" />
-                <element signature="e#16338#16339#0" expanded="false" />
-                <element signature="e#16420#16421#0" expanded="false" />
-                <element signature="e#17181#17182#0" expanded="false" />
-                <element signature="e#17264#17265#0" expanded="false" />
-                <element signature="e#18056#18057#0" expanded="false" />
-                <element signature="e#18138#18139#0" expanded="false" />
-                <element signature="e#32010#32011#0" expanded="false" />
-                <element signature="e#32095#32096#0" expanded="false" />
-                <element signature="e#45577#45578#0" expanded="false" />
-                <element signature="e#45622#45623#0" expanded="false" />
-                <element signature="e#46227#46228#0" expanded="false" />
-                <element signature="e#46266#46267#0" expanded="false" />
-                <element signature="e#46871#46872#0" expanded="false" />
-                <element signature="e#46910#46911#0" expanded="false" />
-                <element signature="e#47714#47715#0" expanded="false" />
-                <element signature="e#47763#47764#0" expanded="false" />
-                <element signature="e#48572#48573#0" expanded="false" />
-                <element signature="e#48621#48622#0" expanded="false" />
-                <element signature="e#49043#49044#0" expanded="false" />
-                <element signature="e#49082#49083#0" expanded="false" />
-                <element signature="e#49505#49506#0" expanded="false" />
-                <element signature="e#49544#49545#0" expanded="false" />
-                <element signature="e#52695#52696#0" expanded="false" />
-                <element signature="e#52734#52735#0" expanded="false" />
-                <element signature="e#59392#59393#0" expanded="false" />
-                <element signature="e#59463#59464#0" expanded="false" />
-                <element signature="e#60118#60119#0" expanded="false" />
-                <element signature="e#60190#60191#0" expanded="false" />
-                <element signature="e#61077#61078#0" expanded="false" />
-                <element signature="e#61118#61119#0" expanded="false" />
-                <element signature="e#61947#61948#0" expanded="false" />
-                <element signature="e#61988#61989#0" expanded="false" />
-                <element signature="e#63429#63430#0" expanded="false" />
-                <element signature="e#63470#63471#0" expanded="false" />
-                <element signature="e#64310#64311#0" expanded="false" />
-                <element signature="e#64355#64356#0" expanded="false" />
-                <element signature="e#65701#65702#0" expanded="false" />
-                <element signature="e#65743#65744#0" expanded="false" />
-                <element signature="e#66828#66829#0" expanded="false" />
-                <element signature="e#66870#66871#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -188,8 +114,8 @@
       <file leaf-file-name="StreamOerations.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module10/StreamOerations.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+            <state relative-caret-position="510">
+              <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#271#272#0" expanded="true" />
@@ -204,11 +130,21 @@
       <file leaf-file-name="Runner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module10/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="315">
+              <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="encoded.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/encoded.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -227,7 +163,17 @@
         <entry file="file://$PROJECT_DIR$/example.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GoJavaOnline.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GoJavaOnline.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -279,8 +225,9 @@
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module09/Runner.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module09/CaesarsСipher.java" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module10/StreamData.java" />
-        <option value="$PROJECT_DIR$/example.txt" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module10/StreamOerations.java" />
+        <option value="$PROJECT_DIR$/example.txt" />
+        <option value="$PROJECT_DIR$/decoded.txt" />
         <option value="$PROJECT_DIR$/src/com/goit/gojavaonline/module10/Runner.java" />
       </list>
     </option>
@@ -398,6 +345,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="module10" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoJavaOnline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="GoJavaOnline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="goit" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gojavaonline" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module09" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -955,12 +932,12 @@
       <workItem from="1468694868052" duration="9419000" />
       <workItem from="1469085381658" duration="21739000" />
       <workItem from="1469204791678" duration="8463000" />
-      <workItem from="1469373813185" duration="4067000" />
+      <workItem from="1469373813185" duration="4987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52242000" />
+    <option name="totallyTimeSpent" value="53162000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1015,13 +992,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/TextFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="47" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module08/tableandsort/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -1580,6 +1550,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/GoJavaOnline.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module10/StreamOerations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="25" selection-end-line="34" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#303#304#0" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#361#362#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module09/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1588,18 +1580,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example.txt">
+    <entry file="file://$PROJECT_DIR$/encoded.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="16" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/encoded.txt">
+    <entry file="file://$PROJECT_DIR$/example.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1612,24 +1604,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module10/StreamOerations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="39" column="39" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#303#304#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module10/Runner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+        <state relative-caret-position="315">
+          <caret line="21" column="76" selection-start-line="21" selection-start-column="76" selection-end-line="21" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

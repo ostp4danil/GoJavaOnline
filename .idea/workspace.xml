@@ -2,21 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="16bcf66a-51c8-4756-bae9-26c870fe2614" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/test/module11/example/ParameterizedSimpleMathTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Area.class" afterPath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Area.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Circle.class" afterPath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Circle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Rectangle.class" afterPath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Rectangle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Runner.class" afterPath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Runner.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Triangle.class" afterPath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Triangle.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/collections01/MyArrayList.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/collections01/Runner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module01/MyFirstJavaProgram.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module02/Files.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module02/Flovers.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module02/Music.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/Aster.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/Bouquet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/Chamomile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/Flower.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/Rose.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/RoseBush.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/first/Tulip.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/second/AudioFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/second/Directory.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/second/File.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/second/Imagefile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/second/TextFile.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/third/Guitar.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/third/MusicInstrument.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/third/MusicShop.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/third/Piano.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module03/third/Trumbet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Area.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Circle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Rectangle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Runner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/first/Triangle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/second/TempConvertion.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/second/TemperatureDemo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/third/DistanceSearcher.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/third/Point.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module04/third/PointDemo.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module05/first/ArrayUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module05/first/Runner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module05/second/Runner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/first/task0401/Area.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/first/task0401/Circle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/first/task0401/Rectangle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/first/task0401/Runner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/first/task0401/Triangle.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/first/task0401/WrongFigureException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/Guitar.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/MusicInstrument.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/MusicShop.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/Piano.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/RangeException.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/Runner.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/Trumpet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/GoJavaOnline/com/goit/gojavaonline/module06/second/UnknownInstrumentException.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/GoJavaOnline.iml" afterPath="$PROJECT_DIR$/GoJavaOnline.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module04/first/Area.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module04/first/Area.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module04/first/Circle.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module04/first/Circle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module04/first/Rectangle.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module04/first/Rectangle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module04/first/Runner.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module04/first/Runner.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/goit/gojavaonline/module04/first/Triangle.java" afterPath="$PROJECT_DIR$/src/com/goit/gojavaonline/module04/first/Triangle.java" />
     </list>
     <ignored path="GoJavaOnline.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,6 +84,16 @@
                 <element signature="e#600#601#0" expanded="true" />
                 <element signature="e#629#630#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,11 +133,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AreaTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AreaTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/test/module04/first/AreaTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="491">
+              <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -141,16 +187,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="495">
               <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module05/first/Runner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -339,14 +375,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="module11" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="example" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1137,7 +1165,7 @@
       <workItem from="1468694868052" duration="9419000" />
       <workItem from="1469085381658" duration="21739000" />
       <workItem from="1469204791678" duration="8463000" />
-      <workItem from="1469373813185" duration="15884000" />
+      <workItem from="1469373813185" duration="16036000" />
     </task>
     <servers />
   </component>
@@ -1157,8 +1185,8 @@
     <history-entry file="AreaTest_calculateAreaTest - 2016.07.25 at 14h 45m 26s.xml">
       <configuration name="AreaTest.calculateAreaTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParameterizedTriangleTest - 2016.07.25 at 14h 10m 05s.xml">
-      <configuration name="ParameterizedTriangleTest" configurationId="JUnit" />
+    <history-entry file="AreaTest_calculateAreaTest - 2016.07.25 at 14h 48m 29s.xml">
+      <configuration name="AreaTest.calculateAreaTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="ParameterizedTriangleTest - 2016.07.25 at 14h 10m 52s.xml">
       <configuration name="ParameterizedTriangleTest" configurationId="JUnit" />
@@ -1174,7 +1202,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64059000" />
+    <option name="totallyTimeSpent" value="64211000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1188,8 +1216,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5028612" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21445782" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28433734" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21445782" sideWeight="0.49713877" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28433734" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3211731" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1718,14 +1746,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/module11/example/SimpleMathTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
@@ -1904,8 +1924,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/goit/gojavaonline/test/module04/first/AreaTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="50" column="5" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+        <state relative-caret-position="491">
+          <caret line="43" column="60" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>

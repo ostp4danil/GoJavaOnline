@@ -3,7 +3,7 @@ package com.goit.gojavaonline.module04.third;
 /**
  * Created by Danil-MAC on 23.06.16.
  */
-class Point {
+public class Point {
     private int x;
     private int y;
 

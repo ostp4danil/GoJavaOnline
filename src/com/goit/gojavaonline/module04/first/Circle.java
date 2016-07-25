@@ -1,12 +1,11 @@
 package com.goit.gojavaonline.module04.first;
 
-/**
- * Created by Danil-MAC on 22.06.16.
- */
-class Circle implements Area{
+import java.util.EmptyStackException;
+
+public class Circle implements Area{
     private double radius;
 
-    Circle(double radius){
+    public Circle(double radius){
         this.radius = radius;
     }
 
@@ -16,5 +15,25 @@ class Circle implements Area{
         return  Math.PI*Math.pow(radius,2);
 
     }
+
+    @Override
+    public double getA() throws Exception{
+        return 0;
+    }
+
+    @Override
+    public double getB() throws Exception{
+        return 0;
+    }
+
+    @Override
+    public double getC() throws Exception{
+        return 0;
+    }
+
+    public double getRadius() {
+        return radius;
+    }
+
 
 }

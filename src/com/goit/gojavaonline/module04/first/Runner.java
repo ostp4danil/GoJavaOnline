@@ -14,7 +14,7 @@ abstract class Runner {
             switch (choice) {
 
                 case "Triangle":
-                    figures[i] = new Triangle(4.5, 2.5, 4.0);
+                    figures[i] = new Triangle(3, 4, 5);
                     break;
                 case "Rectangle":
                     figures[i] = new Rectangle(3.2, 4.5);

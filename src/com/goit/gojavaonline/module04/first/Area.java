@@ -3,6 +3,15 @@ package com.goit.gojavaonline.module04.first;
 /**
  * Created by Danil-MAC on 24.06.16.
  */
-interface Area {
-    public double calculateArea();
+public interface Area {
+
+    double calculateArea();
+
+    double getA() throws Exception;
+
+    double getB() throws Exception;
+
+    double getC() throws Exception;
+
+    double getRadius() throws Exception;
 }

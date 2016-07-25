@@ -1,6 +1,6 @@
-# IntelliJ project files
-.idea
-*.iml
-out
-gen
-/.idea/
+# floder
+.idea/*
+out/*
+
+# class files
+*.class

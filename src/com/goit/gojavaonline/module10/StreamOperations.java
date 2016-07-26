@@ -9,16 +9,6 @@ import java.io.IOException;
 
 public class StreamOperations {
 
-    private final String name;
-
-    public StreamOperations(String name) {
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
     public void writeToFile(final String data, final File file) throws IOException {
         FileWriter out = new FileWriter(file);
         try {

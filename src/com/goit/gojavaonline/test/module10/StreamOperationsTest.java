@@ -20,7 +20,7 @@ public class StreamOperationsTest {
     @Before
     public void setUp() throws Exception {
         file = new File("Test.txt");
-        testOperations = new StreamOperations("Test");
+        testOperations = new StreamOperations();
         result = new StringBuilder();
         out = new FileWriter(file);
         in = new FileReader(file);

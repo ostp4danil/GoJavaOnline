@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Runner {
     public static void main(String[] args) {
         CaesarsСipher cipher = new CaesarsСipher("qwerty", 2);
-        StreamOperations streamOerations = new StreamOperations("Test");
+        StreamOperations streamOerations = new StreamOperations();
 
         File inputFile = new File("example.txt");
         File encodedFile = new File("encoded1.txt");

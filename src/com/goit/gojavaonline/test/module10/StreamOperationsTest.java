@@ -41,7 +41,6 @@ public class StreamOperationsTest {
         while (in.ready()) {
             result.append((char) in.read());
         }
-        in.close();
     }
 
     @Test

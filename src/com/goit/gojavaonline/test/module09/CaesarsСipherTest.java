@@ -17,7 +17,7 @@ public class CaesarsСipherTest {
     private String expected;
 
     @Test
-    public void WhenKeyIs0ThenTextWillNotChange() {
+    public void EncodeTest_WhenKeyIs0ThenTextWillNotChange() {
         text = ("abcdef");
         aphabet = "Doesn't really mean";
         key = 0;
@@ -27,7 +27,7 @@ public class CaesarsСipherTest {
     }
 
     @Test
-    public void WhenAlphabetIsEmptyThenTextWillNotChange() {
+    public void EncodeTest_WhenAlphabetIsEmptyThenTextWillNotChange() {
         text = ("Doesn't really mean");
         aphabet = "";
         key = 0;
@@ -37,7 +37,7 @@ public class CaesarsСipherTest {
     }
 
     @Test
-    public void WhenKeyIs1ThenShouldBeNextLetterInAlphabet() {
+    public void EncodeTest_WhenKeyIs1ThenShouldBeNextLetterInAlphabet() {
         text = ("abcdefg");
         aphabet = "abcdefg";
         key = 1;
@@ -47,7 +47,7 @@ public class CaesarsСipherTest {
     }
 
     @Test
-    public void WhenKeyIsNegativeThenCipherStillWorks(){
+    public void EncodeTest_WhenKeyIsNegativeThenCipherStillWorks(){
         text = ("bcdef");
         aphabet = "abcde";
         key = -1;

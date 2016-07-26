@@ -35,19 +35,19 @@ public class ArrayUtilsTest {
     }
 
     @Test
-    public void searchMax() throws Exception {
+    public void searchMaxTest() throws Exception {
         Assert.assertEquals(maximum,ArrayUtils.searchMax(numbers));
     }
 
     @Test
-    public void searchMin() throws Exception {
+    public void searchMinTest() throws Exception {
         Assert.assertEquals(minimum,ArrayUtils.searchMin(numbers));
 
     }
 
     //Creates Exception if more then 1/3 of array are the same numbers
     @Test
-    public void randomize() throws Exception {
+    public void randomizeTest() throws Exception {
             int counter = 0;
             for (int i=0; i<numbers.length-1; i++){
                 if(numbers[i]==numbers[i+1]) {
@@ -62,7 +62,7 @@ public class ArrayUtilsTest {
     }
 
     @Test
-    public void quickSort() throws Exception {
+    public void quickSortTest() throws Exception {
         int[] result = numbers.clone();
         Arrays.sort(result);
         Assert.assertArrayEquals(result,ArrayUtils.quickSort(numbers));

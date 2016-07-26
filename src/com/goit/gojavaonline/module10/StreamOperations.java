@@ -7,11 +7,11 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
-public class StreamOerations {
+public class StreamOperations {
 
     private final String name;
 
-    public StreamOerations(String name){
+    public StreamOperations(String name) {
         this.name = name;
     }
 
@@ -22,11 +22,7 @@ public class StreamOerations {
     public void writeToFile(final String data, final File file) throws IOException {
         FileWriter out = new FileWriter(file);
         try {
-            char[] dataInCharArray = new char[data.length()];
-            data.getChars(0, data.length(), dataInCharArray, 0);
-            for (char symbol : dataInCharArray) {
-                out.write(symbol);
-            }
+            out.write(data);
         } finally {
             out.close();
         }

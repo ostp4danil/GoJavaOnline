@@ -3,13 +3,10 @@ package com.goit.gojavaonline.test.module05.first;
 import com.goit.gojavaonline.module05.first.ArrayUtils;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Random;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by Danil-MAC on 7/25/16.
@@ -58,7 +55,7 @@ public class ArrayUtilsTest {
                 }
                 if (counter>(numbers.length/3)){
                     System.out.println(counter);
-                    throw new NotSuchRandom();
+                    throw new NotSuchRandomException();
                 }
             }
 
